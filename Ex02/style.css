@@ -1,0 +1,189 @@
+html, body{
+    margin: 0;
+}
+
+.bannerTop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    margin: auto;
+    width: 100%;
+    background-color: #d1dce7;
+    align-items: center;
+}
+
+.bannerTop:hover{
+    background-color: #4f723b;
+}
+
+.bannerTop .textBanner{
+    padding: 105px;
+    color: #153657;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.bannerTop .textBanner:hover{
+    color: white;
+
+}
+
+.bannerTop .textBanner h1{
+    font-size: 230%;
+    font-family: Noto Sans, sans-serif;
+    margin: 0;
+}
+
+.bannerTop .textBanner p{
+    font-size: 90%;
+    font-family: Noto Sans, sans-serif;
+}
+
+.sectionNav{
+    background-color: #153657;
+    width: 100%;
+    margin: auto;
+}
+
+.sectionNav .navBar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 30px;
+    
+}
+
+
+
+.textNav{
+    padding: 6px;
+    color: white;
+    font-family: Noto Sans, sans-serif;
+}
+
+.textNav:hover{
+    color: #3C73E7;
+}
+
+.linkNav{
+    padding: 0px 15px;
+    color: white;
+    font-family: Noto Sans, sans-serif;
+}
+
+
+.imagGray1{
+    width: 100%;
+}
+
+
+.imagGray2{
+    width: 100%;
+    height: 350px;
+}
+
+
+.bodyPage{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: auto;
+    width: calc(100% - 40px);
+    padding: 20px;
+    font-family: Noto Sans, sans-serif;
+}
+
+.bodyPage .bodyEsquerda{
+    display: flex;
+    flex-direction:column;
+    width: 40%;
+    padding: 30px;
+}
+.bodyPage .bodyPrincipal{
+    display: flex;
+    flex-direction:column;
+    width: 60%;
+    padding: 30px;
+
+}
+
+.bodyImg1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.bodyLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.btnLink{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+
+.bodyLinks .btnLink .buttonBtn{
+    background-color: #3C73E7;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    border-radius: 5px;
+    font-family:Noto Sans, sans-serif;
+    font-size: 15px;
+}
+
+.bodyLinks .btnLink .buttonBtn:hover{
+    background-color: #153657;
+    color: white;
+}
+
+.disabled{
+    color: #626263;
+    text-decoration: none;
+}
+
+.bodyLinks .btnLink a{
+    text-decoration: none;
+    padding: 10px;
+    
+}
+
+.linkColor{
+    color: #3C73E7;
+}
+
+
+.sectionFooter{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 100%;
+    background-color: rgb(224, 224, 224);
+    flex-direction: row;
+    padding: 70px 0px;
+    
+}
+
+.sectionFooter h4{
+    font-family:Noto Sans, sans-serif;
+    font-size: 25px;
+    color: #153657;
+}

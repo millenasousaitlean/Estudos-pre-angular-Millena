@@ -1,0 +1,42 @@
+.contPrices{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.contPrices .itemPrice{
+  width: calc(33% - 15px); /* 1% + 45px*/
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.contPrices .itemPrice h2{
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  margin: 0;
+}
+.contPrices .itemPrice.green h2{
+  background-color: #4CAF50;
+}
+.contPrices .itemPrice span{
+  border: 1px solid rgba(133, 133, 133, 0.4);
+  padding: 20px;
+  font-size: 18px;
+}
+.contPrices .itemPrice span.price b{
+  display: block;
+  font-size: 30px;
+}
+.contPrices .itemPrice .contBtn{
+  padding: 20px;
+  border: 1px solid rgba(133, 133, 133, 0.4);
+  background-color: #F1F1F1;
+}
+.contPrices .itemPrice .contBtn button{
+  border: none;
+  background-color: #4CAF50;
+  padding: 12px 45px;
+  color: white;
+}
