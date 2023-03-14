@@ -40,3 +40,18 @@
   padding: 12px 45px;
   color: white;
 }
+
+
+@media ( max-width: 450px ) {
+  .contPrices{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .contPrices .itemPrice{
+    width: 80%;
+    padding: 30px 10px 30px 10px;
+  }
+}
+
+

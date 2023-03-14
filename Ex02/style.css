@@ -44,6 +44,11 @@ html, body{
     font-family: Noto Sans, sans-serif;
 }
 
+
+
+
+/* Section nava */
+
 .sectionNav{
     background-color: #153657;
     width: 100%;
@@ -90,6 +95,8 @@ html, body{
     height: 350px;
 }
 
+
+/*  */
 
 .bodyPage{
     display: flex;
