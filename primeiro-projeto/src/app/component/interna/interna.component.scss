@@ -1,0 +1,95 @@
+
+// SECTION, IMAGEM E TITULO
+.noticias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.noticias .itemNoticia{
+    width: 100%;
+    height: 333px;
+    background-image: url('https://picsum.photos/seed/picsum/1400/330');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.noticias .itemNoticia::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.noticias .itemNoticia .dataPublicacao{
+    font-family: helvetica;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 21px;
+    left: 29px;
+}
+.noticias .itemNoticia .textosNoticias{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+    left: 29px;
+    bottom: 48px;
+}
+.noticias .itemNoticia .textosNoticias h3{
+    font-family: helvetica;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+.noticias .itemNoticia .textosNoticias h6{
+    font-family: helvetica;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.noticias .itemNoticia .textosNoticias a{
+    font-family: helvetica;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: #000AFF;
+}
+
+// LINK HOME
+.bodyInterna .LinkHome{
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.bodyInterna .LinkHome a {
+    padding: 26px 0px 26px 0px;
+    color: #00D66F;
+    text-decoration: none;
+    font-family: helvetica;
+    font-size: 110%;
+    margin-left: 50px;
+}
+
+// TEXTO CORPO DA PAGINA 
+
+.bodyInterna .textBody p{
+    color: white;
+    font-family: helvetica;
+    font-size: 110%;
+    padding: 0px 40px 40px 40px;
+    text-align: center;
+}
+
+
+
+
+

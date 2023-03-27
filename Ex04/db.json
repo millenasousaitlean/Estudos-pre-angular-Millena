@@ -1,0 +1,61 @@
+{
+  "noticias": [
+    {
+      "titulo": "Lorem Ipsum",
+      "categoria": 1,
+      "dataPublicacao": "2022-07-28",
+      "autor": "Joe Doe",
+      "imagem": "https://static.preparaenem.com/2022/08/paisagem-natural-suica.jpg",
+      "corpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut metus eget mi euismod dignissim. Nulla ullamcorper nisi ligula, ut facilisis lorem sollicitudin vitae. Morbi risus nibh, sodales a justo pellentesque, imperdiet pellentesque odio. Vestibulum lacinia mi quis nunc tincidunt ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque venenatis commodo lorem elementum malesuada. Suspendisse id fermentum eros, viverra iaculis mi. Quisque vitae sollicitudin tortor. Morbi dignissim lorem vel tellus elementum mattis. Integer sodales mauris ipsum. Sed condimentum lacus odio, et venenatis eros blandit ut. In massa dui, varius vel velit tempor, scelerisque dictum odio. \n Sed fringilla arcu quam, ut placerat nibh facilisis nec. Vivamus dignissim ligula vel quam tempus, eget convallis tortor vestibulum. Nulla facilisi. Praesent nec metus ut orci tincidunt eleifend. Proin laoreet, diam ut interdum euismod, lorem ex viverra dolor, et ultricies eros odio ac purus. Morbi in nibh sed ante vehicula eleifend et vitae massa. Sed et mattis lacus, sit amet luctus orci. Nam justo lectus, molestie vitae tellus convallis, lacinia placerat purus. Aenean et mauris ut nunc tincidunt malesuada vel vitae risus. Pellentesque bibendum commodo tortor, nec bibendum augue sodales ac. Suspendisse condimentum tincidunt orci elementum porttitor. \n Cras ut tristique massa. Praesent nec risus scelerisque, pharetra urna quis, ullamcorper neque. Pellentesque ut mattis augue. Donec nec tortor ac turpis porttitor elementum nec non metus. Donec at turpis sem. Aenean iaculis diam vestibulum metus varius, laoreet eleifend velit rutrum. Aenean sit amet congue enim. \n Suspendisse quam enim, porta quis lectus nec, maximus ullamcorper nulla. Fusce mattis nulla ut finibus pulvinar. Vivamus nec gravida lacus. Cras eu ipsum non lacus pellentesque viverra. In congue rhoncus sem ut condimentum. Praesent aliquam arcu lectus, vitae eleifend odio tristique eget. Etiam rutrum dui ut faucibus semper. Aliquam faucibus augue eros, sit amet lacinia mauris mattis non. Morbi ac nunc id sapien elementum dignissim eget et neque. Donec tincidunt rutrum vulputate. Morbi nec ultricies erat. \n Mauris viverra orci ut justo dignissim, facilisis dictum justo elementum. Nunc euismod porta purus, ac consectetur eros vehicula at. Sed quam tortor, molestie eget molestie quis, aliquam sit amet turpis. Nulla gravida vel est tempor vulputate. Morbi malesuada turpis ut libero lacinia auctor. Vestibulum non fermentum metus. Mauris eu sagittis sem. Suspendisse in finibus diam. Cras pellentesque viverra justo, ac pretium eros cursus a. \n Morbi quis metus vel nisl ultricies eleifend vitae in velit. Maecenas scelerisque venenatis massa nec pharetra. Praesent varius feugiat feugiat. Donec laoreet nisl sit amet consectetur tempus. Integer euismod malesuada ullamcorper. Quisque justo odio, eleifend ac imperdiet non, sodales nec purus. Ut blandit leo nec suscipit commodo. Duis arcu tellus, varius eu magna id, euismod interdum lectus. Mauris euismod facilisis porta. Nam eget justo rutrum, blandit libero a, semper sapien. Aliquam efficitur, risus quis gravida iaculis, odio elit euismod nunc, nec hendrerit diam leo et elit. Cras faucibus lectus vel rutrum rhoncus. Pellentesque sed enim eu nunc feugiat aliquam eget id est. Vivamus dolor risus, semper egestas tortor nec, interdum euismod magna. \n Quisque semper lobortis turpis sed auctor. Proin consectetur massa at tellus sollicitudin volutpat. Etiam ipsum felis, malesuada sit amet ultricies quis, rhoncus sit amet urna. Aenean cursus, justo eu hendrerit sollicitudin, lacus dui viverra sapien, ullamcorper lobortis nisi nibh ut nibh. Phasellus eleifend felis sit amet tellus tempus, quis varius ex gravida. Aliquam risus ligula, rhoncus vitae commodo eu, vulputate non massa. Praesent dignissim eu odio eget aliquam. Vivamus a elementum lorem, ut fermentum odio. Fusce a lacinia ante. Suspendisse iaculis tincidunt consequat. Sed eros ligula, malesuada nec tempor in, pellentesque sit amet urna. Morbi vulputate turpis vel risus efficitur, in ultricies lectus laoreet. Suspendisse consequat nibh et rutrum luctus. Cras eleifend mi tristique velit scelerisque tempus. Curabitur id ligula at lorem semper ornare.",
+      "id": 1
+    },
+    {
+      "titulo": "Incêndio em escola",
+      "categoria": 2,
+      "dataPublicacao": "2023-03-22",
+      "autor": "Patricia Luz",
+      "imagem": "https://uploads.metropoles.com/wp-content/uploads/2023/03/22105635/Incendio-no-IEMG-BH-metropoles.jpg",
+      "corpo": "Um princípio de incêndio no Instituto de Educação de Minas Gerais (IEMG) mobilizava o Corpo de Bombeiros de Minas Gerais (CBMMG), na manhã desta quarta-feira (22), na Região Centro-Sul de Belo Horizonte. A escola é uma das mais tradicionais da cidade, fundada em 1906.Segundo o Capitão Fabrício Dalfior, 14 vítimas, entre alunos e funcionários, foram para o Hospital João XXIII. As pessoas não sofreram nenhuma queimadura, houve apenas mal-estar após inalação de fumaça. Veja vídeo acima;\n\nAinda de acordo com o representante do CBMMG no local, muitas pessoas estão sendo atendidas em estado de choque. Professores disseram que não ouviram alarme de incêndio.\n\nSegundo informações preliminares, o fogo teria começado por volta de 9h45 dentro de uma sala de aula da escola, no primeiro piso.",
+      "id": 2
+    },
+    {
+      "titulo": "Petrobras reduz preço do diesel para distribuidoras",
+      "categoria": 5,
+      "dataPublicacao": "2023-03-22",
+      "autor": "G1",
+      "imagem": "https://classic.exame.com/wp-content/uploads/2020/12/petrobras-2.jpg?quality=70&strip=info&w=960",
+      "corpo": "A Petrobras anunciou nesta quarta-feira (22) mais uma redução do preço do diesel para as distribuidoras. O valor passa de R$ 4,02 para R$ 3,84 por litro, uma redução de R$ 0,18 ou 4,47%.\n\nA medida vale a partir de quinta-feira (23) e os preços dos demais combustíveis não sofreram alteração. A última redução anunciada pela Petrobras foi no dia 28 de fevereiro, para diesel e gasolina.\n\nSegundo a estatal, a nova redução tem como objetivos principais a \"manutenção da competitividade dos preços da Petrobras\" frente às principais alternativas de suprimento dos clientes e a \"participação de mercado necessária para a otimização dos ativos de refino\".\nO recuo do preço do diesel acompanha a queda nos preços do barril de petróleo no mercado internacional. Nesta semana, os preços do petróleo foram ao seu nível mais baixo em quase 15 meses, afetados pela crise bancária persistente, que gera temores de uma desaceleração do crédito e da economia.\n\nO barril do tipo Brent, referência para os preços da Petrobras, chegaram à casa dos US$ 72,97. Nos momentos mais críticos dos preços de combustíveis, estavam no patamar de US$ 140.",
+      "id": 3
+    }
+  ],
+  "categorias": [
+    {
+      "nome": "Mundo",
+      "id": 1
+    },
+    {
+      "nome": "Brasil",
+      "id": 2
+    },
+    {
+      "nome": "Esporte",
+      "id": 3
+    },
+    {
+      "nome": "BBB",
+      "id": 4
+    },
+    {
+      "nome": "Economia",
+      "id": 5
+    },
+    {
+      "nome": "Politica",
+      "id": 6
+    },
+    {
+      "nome": "Famosos",
+      "id": 7
+    }
+  ]
+}

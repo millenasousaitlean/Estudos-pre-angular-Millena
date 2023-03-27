@@ -1,0 +1,116 @@
+html, body{
+    margin: 0;
+}
+
+/*  SECTION NAV DA PAGINA  */
+.sectionNav {
+    background-color: #6F6F6F;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionNav .logoNav{
+    padding: 0px 40px 0px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionNav .homeNav{
+    padding: 0px 40px 0px 0px;
+}
+
+.sectionNav .homeNav a{
+    text-decoration: none;
+    font-family: arial;
+    font-family: 250%;
+    color: black;
+    margin-top: 34px;
+    padding: 0px 0px 14px 0px;
+}
+
+.sectionNav .homeNav .divTraco{
+    background-color: white;
+    padding: 2px 10px;
+    margin-top: 15px;
+}
+
+/* SECTION TITULO DA PAGINA */
+
+.tituloPagina{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #352727;
+}
+
+.tituloPagina .textoTitulo{
+    text-align: center;
+    color: white;
+    font-size: 120%;
+    font-family: helvetica;
+}
+
+
+
+
+/* SECTION BODY, CADASTRO DE NOVOS CONTEUDOS */
+
+.sectionAddItem {
+    background-color: #1E1E1E;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 200px 0px;
+}
+
+.sectionAddItem .formCadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionAddItem .formCadastro .inputCadastro{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0px 15px 0px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.sectionAddItem .formCadastro .inputCadastro label{
+    background-color: aliceblue;
+    font-family: helvetica;
+    font-size: 90%;
+    padding: 5px 15px 5px 15px;
+    border-radius: 7px;
+}
+
+.sectionAddItem .formCadastro .inputCadastro textarea{
+    padding: 0px 10px 30px 0px;
+}
+
+.sectionAddItem .formCadastro button{
+    background-color: rgb(39, 39, 228);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 30px;
+
+}
+
+
+
+
+
+/* ESTILIZAÇÃO CLASS ADD */
+
+.hiden{
+    display: none;
+}
+
+.inputErrado{
+    border: red;
+}

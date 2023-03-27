@@ -1,0 +1,5 @@
+ - Lembrar de colocar a tag script do ajax caso for usar ele para a API
+
+ - Para iniciar o json server é somente dar o comando *json-server --watch db.json* na pasta em que o arquivo se encontra
+
+ - Use a api de categoria para pegar e mostrar o nome da categoria pelo ID

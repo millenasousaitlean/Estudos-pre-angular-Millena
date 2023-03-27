@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar</title>
+    <link rel="stylesheet" href="../styles/adicionar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sectionNav">
+        <div class="logoNav">
+            <img src="../images/10 1.png" alt="">
+        </div>
+        <div class="homeNav">
+            <a href="../pages/home.html">
+                <b>HOME</b>
+            </a>
+            <div class="divTraco" id="homeTraco">   
+            </div>
+        </div>
+    </section>
+    <section class="tituloPagina">
+        <div class="textoTitulo">
+            <h1>
+                Adicionar publicação
+            </h1>
+        </div>
+    </section>
+    <section class="sectionAddItem">
+        <div class="formCadastro">
+            <div class="inputCadastro">
+                <label for="name">
+                    Título
+                </label>
+                <input type="text" placeholder="Digite aqui..." style="padding: 5px 50px 5px 10px;" id="inputTitulo">
+            </div>
+            <div class="inputCadastro">
+                <label for="name">
+                    Categoria
+                </label>
+                <select class="custom-select" style="padding: 5px 50px 5px 10px;" id="selectCategoria">
+                    <option value=""></option>
+                    <option value="1">Mundo</option>
+                    <option value="2">Brasil</option>
+                    <option value="3">Esporte</option>
+                    <option value="4">BBB</option>
+                    <option value="5">Economia</option>
+                    <option value="6">Politica</option>
+                    <option value="7">Famosos</option>
+                  </select>
+            </div>
+            <div class="inputCadastro">
+                <label for="name">
+                    Data da Publicação
+                </label>
+                <input type="date" placeholder="Digite aqui..." style="padding: 5px 15px 5px 10px;" id="inputDataPubli">
+            </div>
+            <div class="inputCadastro">
+                <label for="name">
+                    Autor
+                </label>
+                <input type="text" placeholder="Digite aqui..." style="padding: 5px 50px 5px 10px;" id="inputAutor">
+            </div>
+            <div class="inputCadastro">
+                <label for="name">
+                    link da imagem
+                </label>
+                <input type="text" placeholder="Digite aqui..." style="padding: 5px 50px 5px 10px;" id="inputLinkImg">
+            </div>
+            <div class="inputCadastro">
+                <label for="name">
+                    Corpo da Publicação 
+                </label>
+                <textarea type="text" placeholder="Digite aqui..." id="inputCorpoPubli"></textarea>
+            </div>
+                      
+            <button class="btnButton2" onclick="buttonForm(); return false">
+                Adicionar conteúdo
+            </button>
+        </div>
+    </section>
+
+    
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="../scripit/script2.js"></script>  
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+/* ${data[i].dataPublicacao.split('-').reverse().join('/')}. */
+/* .split ('-')= para retirar o - e deixar em um array */
+/* reverse() = para reverter a ordem */
+/* join('/') = adiciona a / entre os arrays da data.*/

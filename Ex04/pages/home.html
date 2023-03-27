@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela pelo Figma</title>
+    <link rel="stylesheet" href="../styles/home.css">
+</head>
+<body>
+    <section class="sectionNav">
+        <div class="logoNav">
+            <img src="../images/10 1.png" alt="">
+        </div>
+        <div class="homeNav">
+            <a href="../pages/home.html">
+                <b>HOME</b>
+            </a>
+            <div class="divTraco" id="homeTraco"></div>
+        </div>
+    </section>
+    <section class="bodySite">
+        <div class="caixaSelecao">
+            <div class="selectCaixa">
+                <label for="">Categorias</label>
+                <select name="name" id="selectCategorias">
+                    <option value=""></option>
+                    <option value="BBB">BBB</option>
+                    <option value="Mundo">Mundo</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Esporte">Esporte</option>
+                </select>
+            </div>
+            <div class="btnTop">
+                <button type="button" class="btnFilter" onclick="filtrarCategoria()">
+                        filtrar categoria
+                </button>
+                <button type="button" class="btnAdd" onclick="btnAdd()">
+                    Adicionar novo conteúdo
+                </button>
+            </div>
+        </div>
+        <ul id="infosPublicacoes">
+            <li>
+                <!-- <div class="position1" style="background-image:url();">
+                    <a href="../pages/interna.html" class="bannerImg1">
+                      <h2>
+                        20/12/2022
+                      </h2>
+                        <div class="textBanner1">
+                          <h1>
+                            Monte Fuji
+                          </h1>
+                          <h3>
+                            Ponto turistico
+                          </h3>
+                          <h4>
+                            Autor: Millena Sousa
+                          </h4>   
+                        </div>
+                    </a>
+                </div> -->
+            </li>
+        </ul>
+    
+        
+
+        <!-- <div class="position2">
+            <a href="../pages/interna2.html" class="bannerImg1">
+                <h2>
+                    20/12/2022
+                </h2>
+                <div class="textBanner1">
+                   <h1>
+                        Piramide de Gizé
+                    </h1>
+                    <h3>
+                        Ponto turistico
+                    </h3>
+                    <h4>
+                        Autor: Millena Sousa
+                    </h4> 
+                </div>
+            </a>
+        </div> -->
+    </section>
+
+<script src="../scripit/script1.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    
+</body>
+</html>
