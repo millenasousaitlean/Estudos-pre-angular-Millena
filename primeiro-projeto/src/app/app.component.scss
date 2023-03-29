@@ -48,3 +48,13 @@ header nav .contLinks .btnLinkHome::after {
     left: 0;
   }
 
+// MEDIA QUERY NAV
+
+@media ( max-width: 300px ){
+    header nav img {
+        width: 100px;
+    }
+    header nav {
+        padding: 15px 15px;
+    }
+}

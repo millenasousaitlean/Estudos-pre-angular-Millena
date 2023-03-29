@@ -5,7 +5,7 @@ import { InternaComponent } from './component/interna/interna.component';
 
 const routes: Routes = [
   { path:"", component: HomeComponent },
-  { path:"interna", component: InternaComponent }
+  { path:"interna/:id", component: InternaComponent }
 ];
 
 @NgModule({

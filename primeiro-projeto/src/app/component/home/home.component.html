@@ -1,35 +1,28 @@
 
+<section class="btnsNoticias">
+  <div class="lineBtn">
+    <button type="button" *ngFor="let categ of categorias" (click)="trocarCategoriaSelecionada(categ.id)">
+      {{categ.nome}}
+    </button>
+  </div>
+</section>
 <section class="noticias">
-    <div class="itemNoticia" >
+  <ng-container *ngFor=" let i of noticia ">
+    <div  *ngIf="categoriaSelecionada == i.categoria || categoriaSelecionada == 0" class="itemNoticia" style="background-image: url({{i.imagem}});" routerLink="/interna/{{i.id}}">
       <span class="dataPublicacao">
-        21/03/2023
+        {{i.dataPublicacao}}
       </span>
       <div class="textosNoticias" src="http://localhost:4200/interna">
         <h3>
-          Lorem Ipsum
+          {{i.titulo}}
         </h3>
         <h6>
-          Categoria
+          {{findCateg(i.categoria)}}
         </h6>
         <a href="http://localhost:4200/interna">
-          Autor
+          {{i.autor}}
         </a>
       </div>
     </div>
-    <div class="itemNoticia" src="http://localhost:4200/interna">
-      <span class="dataPublicacao">
-        21/03/2023
-      </span>
-      <div class="textosNoticias">
-        <h3>
-          Lorem Ipsum
-        </h3>
-        <h6>
-          Categoria
-        </h6>
-        <a href="http://localhost:4200/interna">
-          Autor
-        </a>
-      </div>
-    </div>
-  </section>
+</ng-container>
+</section>
