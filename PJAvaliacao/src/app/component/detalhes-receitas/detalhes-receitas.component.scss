@@ -1,0 +1,313 @@
+// section principal da pagina
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+// IMAGEM TITULO PRINCIPAL
+.textoReceita .textInicio {
+    display: flex;
+    flex-direction: row;
+}
+
+.textoReceita .textInicio .imgReceita img {
+    width: 235px;
+    height: 200px;
+    padding: 70px 67px 38px 68px;
+}
+
+// TITULO PRINCIPAL
+.textoReceita .textInicio .text1 h1 {
+    font-family: 'Roboto';
+    font-size: 300%;
+    font-weight: 700;
+    line-height: 68px;
+    padding: 55px 0px 21px 0px;
+}
+
+// PRIMEIRO PARAGRAFO
+.textoReceita .textInicio .text1 p {
+    font-family: 'Roboto';
+    font-size: 110%;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+// TEXTO DIVIDIDO POR LINHAS HORIZONTAIS
+.textoReceita .textInicio .text1 .textLine {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 30px 0px 0px 0px;
+}
+
+.textoReceita .textInicio .text1 .textLine .divRendi {
+    display: flex;
+    flex-direction: column;   
+}
+
+.textoReceita .textInicio .text1 .textLine .divPreparo {
+    display: flex;
+    flex-direction: column;
+}
+
+.textoReceita .textInicio .text1 .textLine .divDificuldade {
+    display: flex;
+    flex-direction: column;
+}
+
+.textoReceita .textInicio .text1 .textLine p {
+    font-family: 'Roboto';
+    font-size: 120%;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: center;
+    color: #FF9900;
+}
+
+// LINHAS HORIZONTAIS DE SEPARAÇÃO 
+.traco1 {
+    background-color: black;
+    width: 2px;
+    height: 50px;
+}
+
+.traco2 {
+    background-color: black;
+    width: 2px;
+    height: 50px;
+}
+
+// TEXTO MEIO DA PAGINA (PRINCIPAL)
+.textoReceita .textMeio {
+    margin-left: 67px;
+}
+
+// TITULO INGREDIENTES
+.textoReceita .textMeio .text2 h2 {
+    font-family: 'Roboto';
+    font-size: 120%;
+    font-weight: 700;
+    line-height: 33px;
+}
+
+// LISTA DE INGREDIENTES 
+.textoReceita .textMeio .text2 .gradeLista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.textoReceita .textMeio .text2 .listaReceita {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    font-family: 'Roboto';
+    font-size: 110%;
+    font-weight: 400;
+    padding: 10px 0px 10px 0px;
+}
+
+.textoReceita .textMeio .text2 .listaReceita p {
+    line-height: 10px;
+}
+
+// TITULO MODO DE PREPARO
+.textoReceita .textMeio .text3 h2 {
+    font-family: 'Roboto';
+    font-size: 120%;
+    font-weight: 700;
+    line-height: 33px;
+    margin-top: 40px;
+}
+
+// LISTA DE MODO DE PREPARO
+.textoReceita .textMeio .text3 .textPrincipal {
+    margin: 20px;
+}
+
+.textoReceita .textMeio .text3 .textPrincipal p {
+    font-family: 'Roboto';
+    font-size: 115%;
+    font-weight: 400;
+    line-height: 23px;
+    padding: 20px 0px 15px 0px;
+}
+
+// NUMERO LISTA MODO DE PREPARO
+.textoReceita .textMeio .text3 .textPrincipal span {
+    font-family: 'Roboto';
+    font-size: 150%;
+    font-weight: 700;
+    line-height: 35px;
+    color: #FF9900;
+}
+
+// GALERIA DE IMAGENS ALEATORIAS
+.galeriaAleatoria .galeriaHome {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.galeriaAleatoria .galeriaCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 55px 85px 0px 100px;
+}
+
+.galeriaAleatoria .galeriaCards .cardsHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    gap: 15px;
+    transition: 1s;
+}
+
+// EFEITOS CARDS
+.galeriaAleatoria .galeriaCards .cardsHome:hover {
+    transform: scale(1.1);
+}
+
+.galeriaAleatoria .galeriaCards .cardsHome:hover::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 235px;
+    height: 235px;
+    left: 0;
+    top: 0;
+    background-color: rgba(193, 194, 192, 0.493);
+}
+
+.galeriaAleatoria .galeriaCards .cardsHome img {
+    height: 235px;
+    width: 235px;
+    transition: 1s;
+}
+
+.galeriaAleatoria .galeriaCards .cardsHome p {
+    font-family: 'Roboto';
+    font-size: 130%;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+// MEDIA QUERY.............................................................................
+
+@media (max-width: 670px) {
+    // SECTION PAGINA TODA
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    // CONFIGURAÇÃO DE INICIO DA PAGINA
+    .textoReceita .textInicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    // TITULO DA RECEITA
+    .textoReceita .textInicio .text1 h1 {
+        top: 180px;
+        font-family: 'Roboto';
+        font-size: 300%;
+        width: 250px;
+        word-wrap: break-word;
+        position: absolute;
+        padding: 10px 20px 0px 20px;
+    }
+    // IMAGEM PRINCIPAL
+    .textoReceita .textInicio .imgReceita img {
+        width: 235px;
+        height: 200px;
+        padding: 300px 0px 50px 0px;
+        align-items: center;
+    }
+    // RESUMO RECEITA
+    .textoReceita .textInicio .text1 p {
+        width: 270px;
+        word-wrap: break-word;
+        font-weight: 600;
+        font-size: 110%;
+        padding: 10px;
+    }
+    // TRAÇO DE SEPARAÇÃO DAS INFOS
+    .traco1 {
+        display: none;
+    }
+    .traco2 {
+        display: none;
+    }
+    // INFOS COM SEPARAÇÃO
+    .textoReceita .textInicio .text1 .textLine {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .textoReceita .textInicio .text1 .textLine .divRendi{
+        flex-direction: row;
+    }
+
+    .textoReceita .textInicio .text1 .textLine .divPreparo{
+        flex-direction: row;
+    }
+
+    .textoReceita .textInicio .text1 .textLine .divDificuldade{
+        flex-direction: row;
+    }
+
+    .textoReceita .textInicio .text1 .textLine p {
+        width: 110px;
+        padding: 0;
+    }
+    // TEXTOS PRINCIPAIS DA RECEITA
+    .textoReceita .textMeio {
+        text-align: center;
+        margin: 0;
+    }
+    // TITULO INGREDIENTES
+    .textoReceita .textMeio .text2 h2 {
+        margin-top: 60px;
+        font-size: 130%;
+    }
+    // LISTA DE INGREDIENTES
+    .textoReceita .textMeio .text2 .gradeLista {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        margin-left: -60px;
+    }
+
+    .textoReceita .textMeio .text2 .listaReceita {
+        margin-left: 55px;
+    }
+    // TITULO MODO DE PREPARO
+    .textoReceita .textMeio .text3 h2 {
+        font-size: 130%;
+        margin-top: 60px;
+        margin-bottom: -30px;
+    }
+    // TEXTO EM LISTA MODO DE PREPARO
+    .textoReceita .textMeio .text3 .textPrincipal p{
+        width: 315px;
+        word-wrap: break-word;
+        padding: 30px 0px 0px 0px;
+    }
+    // LISTA DE CARDS ALEATORIOS DE RECEITAS
+    .galeriaAleatoria .galeriaCards {
+        padding: 35px 0px 0px 4px;
+        margin-bottom: 30px;
+    }
+}

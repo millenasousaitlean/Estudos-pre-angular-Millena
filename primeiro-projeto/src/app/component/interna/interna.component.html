@@ -1,37 +1,41 @@
-<ng-container  *ngFor="let i of noticia">
+<!-- <ng-container  *ngFor="let i of noticia">
+    <section >
+        <div  *ngIf="i.id == idDaUrl" > -->
     <section class="noticias">
-        <div  *ngIf="i.id == idDaUrl" style="background-image:url({{i.imagem}});" class="itemNoticia">
+        <div [ngStyle]="{'background-image':'url('+ noticias.imagem +')'}" class="itemNoticia">
             <span class="dataPublicacao">
-                {{ i.dataPublicacao }}
+                {{ noticias.dataPublicacao }}
             </span>
-        <div class="textosNoticias">
-            <h3>
-                {{ i.titulo }}
-            </h3>
-        <h6>
-            {{findCateg(i.categoria)}}
-        </h6>
-        <a href="#">
-            {{ i.autor }}
-        </a>
+            <div class="textosNoticias">
+                <h3>
+                    {{ noticias.titulo }}
+                </h3>
+                <h6>
+                    {{findCateg(noticias.categoria)}}
+                </h6>
+                <a href="#">
+                    {{ noticias.autor }}
+                </a>
+            </div>
         </div>
-    </div>
-    </section>
+    </section >
+    <!-- </div>
+    </section> -->
     
-    
- <div class="bodyInterna" *ngIf="i.id == idDaUrl">
+    <!-- *ngIf="i.id == idDaUrl" -->
+    <div class="bodyInterna" >
 
     <div class="LinkHome">
         <a href="#"> <- Home</a>
     </div>
     <div class="textBody">
         <p>
-            {{ i.corpo }}
+            {{ noticias.corpo }}
         </p>
     </div>
 
   </div>  
-</ng-container>
+<!-- </ng-container> -->
 
 
 

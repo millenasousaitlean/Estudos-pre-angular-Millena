@@ -1,61 +1,618 @@
 {
-  "noticias": [
+  "receitas": [
     {
-      "titulo": "Lorem Ipsum",
+      "titulo": "Moqueca de peixe",
+      "resumo": "Moqueca é um prato tradicional que une tudo o que a gente adora: muito sabor e uma receita toda preparada em uma panela só, super prática e rápida.",
+      "rendimento": 2,
+      "tempoPreparo": 120,
+      "dificuldade": 1,
       "categoria": 1,
-      "dataPublicacao": "2022-07-28",
-      "autor": "Joe Doe",
-      "imagem": "https://static.preparaenem.com/2022/08/paisagem-natural-suica.jpg",
-      "corpo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut metus eget mi euismod dignissim. Nulla ullamcorper nisi ligula, ut facilisis lorem sollicitudin vitae. Morbi risus nibh, sodales a justo pellentesque, imperdiet pellentesque odio. Vestibulum lacinia mi quis nunc tincidunt ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque venenatis commodo lorem elementum malesuada. Suspendisse id fermentum eros, viverra iaculis mi. Quisque vitae sollicitudin tortor. Morbi dignissim lorem vel tellus elementum mattis. Integer sodales mauris ipsum. Sed condimentum lacus odio, et venenatis eros blandit ut. In massa dui, varius vel velit tempor, scelerisque dictum odio. \n Sed fringilla arcu quam, ut placerat nibh facilisis nec. Vivamus dignissim ligula vel quam tempus, eget convallis tortor vestibulum. Nulla facilisi. Praesent nec metus ut orci tincidunt eleifend. Proin laoreet, diam ut interdum euismod, lorem ex viverra dolor, et ultricies eros odio ac purus. Morbi in nibh sed ante vehicula eleifend et vitae massa. Sed et mattis lacus, sit amet luctus orci. Nam justo lectus, molestie vitae tellus convallis, lacinia placerat purus. Aenean et mauris ut nunc tincidunt malesuada vel vitae risus. Pellentesque bibendum commodo tortor, nec bibendum augue sodales ac. Suspendisse condimentum tincidunt orci elementum porttitor. \n Cras ut tristique massa. Praesent nec risus scelerisque, pharetra urna quis, ullamcorper neque. Pellentesque ut mattis augue. Donec nec tortor ac turpis porttitor elementum nec non metus. Donec at turpis sem. Aenean iaculis diam vestibulum metus varius, laoreet eleifend velit rutrum. Aenean sit amet congue enim. \n Suspendisse quam enim, porta quis lectus nec, maximus ullamcorper nulla. Fusce mattis nulla ut finibus pulvinar. Vivamus nec gravida lacus. Cras eu ipsum non lacus pellentesque viverra. In congue rhoncus sem ut condimentum. Praesent aliquam arcu lectus, vitae eleifend odio tristique eget. Etiam rutrum dui ut faucibus semper. Aliquam faucibus augue eros, sit amet lacinia mauris mattis non. Morbi ac nunc id sapien elementum dignissim eget et neque. Donec tincidunt rutrum vulputate. Morbi nec ultricies erat. \n Mauris viverra orci ut justo dignissim, facilisis dictum justo elementum. Nunc euismod porta purus, ac consectetur eros vehicula at. Sed quam tortor, molestie eget molestie quis, aliquam sit amet turpis. Nulla gravida vel est tempor vulputate. Morbi malesuada turpis ut libero lacinia auctor. Vestibulum non fermentum metus. Mauris eu sagittis sem. Suspendisse in finibus diam. Cras pellentesque viverra justo, ac pretium eros cursus a. \n Morbi quis metus vel nisl ultricies eleifend vitae in velit. Maecenas scelerisque venenatis massa nec pharetra. Praesent varius feugiat feugiat. Donec laoreet nisl sit amet consectetur tempus. Integer euismod malesuada ullamcorper. Quisque justo odio, eleifend ac imperdiet non, sodales nec purus. Ut blandit leo nec suscipit commodo. Duis arcu tellus, varius eu magna id, euismod interdum lectus. Mauris euismod facilisis porta. Nam eget justo rutrum, blandit libero a, semper sapien. Aliquam efficitur, risus quis gravida iaculis, odio elit euismod nunc, nec hendrerit diam leo et elit. Cras faucibus lectus vel rutrum rhoncus. Pellentesque sed enim eu nunc feugiat aliquam eget id est. Vivamus dolor risus, semper egestas tortor nec, interdum euismod magna. \n Quisque semper lobortis turpis sed auctor. Proin consectetur massa at tellus sollicitudin volutpat. Etiam ipsum felis, malesuada sit amet ultricies quis, rhoncus sit amet urna. Aenean cursus, justo eu hendrerit sollicitudin, lacus dui viverra sapien, ullamcorper lobortis nisi nibh ut nibh. Phasellus eleifend felis sit amet tellus tempus, quis varius ex gravida. Aliquam risus ligula, rhoncus vitae commodo eu, vulputate non massa. Praesent dignissim eu odio eget aliquam. Vivamus a elementum lorem, ut fermentum odio. Fusce a lacinia ante. Suspendisse iaculis tincidunt consequat. Sed eros ligula, malesuada nec tempor in, pellentesque sit amet urna. Morbi vulputate turpis vel risus efficitur, in ultricies lectus laoreet. Suspendisse consequat nibh et rutrum luctus. Cras eleifend mi tristique velit scelerisque tempus. Curabitur id ligula at lorem semper ornare.",
+      "destaque": true,
+      "imagem": "https://cdn0.tudoreceitas.com/pt/posts/1/8/2/moqueca_de_peixe_tradicional_11281_600.webp",
+      "dataPublicacao": "2023-03-30",
+      "ingredientes": [
+        {
+          "quantidade": "500g",
+          "ingrediente": "badejo"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "tomate"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "pimentão amarelo"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "pimentão vermelho"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "pimentão verde"
+        },
+        {
+          "quantidade": "",
+          "ingrediente": "sal"
+        },
+        {
+          "quantidade": "",
+          "ingrediente": "pimenta"
+        },
+        {
+          "quantidade": "",
+          "ingrediente": "azeite"
+        },
+        {
+          "quantidade": "",
+          "ingrediente": "coentro"
+        },
+        {
+          "quantidade": "½",
+          "ingrediente": "cebola"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "dente de alho"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "vidro de leite de coco"
+        }
+      ],
+      "modoPreparo": [
+        {
+          "passo": 1,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 4,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 3,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 6,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 2,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 5,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        }
+      ],
       "id": 1
     },
     {
-      "titulo": "Incêndio em escola",
-      "categoria": 2,
-      "dataPublicacao": "2023-03-22",
-      "autor": "Patricia Luz",
-      "imagem": "https://uploads.metropoles.com/wp-content/uploads/2023/03/22105635/Incendio-no-IEMG-BH-metropoles.jpg",
-      "corpo": "Um princípio de incêndio no Instituto de Educação de Minas Gerais (IEMG) mobilizava o Corpo de Bombeiros de Minas Gerais (CBMMG), na manhã desta quarta-feira (22), na Região Centro-Sul de Belo Horizonte. A escola é uma das mais tradicionais da cidade, fundada em 1906.Segundo o Capitão Fabrício Dalfior, 14 vítimas, entre alunos e funcionários, foram para o Hospital João XXIII. As pessoas não sofreram nenhuma queimadura, houve apenas mal-estar após inalação de fumaça. Veja vídeo acima;\n\nAinda de acordo com o representante do CBMMG no local, muitas pessoas estão sendo atendidas em estado de choque. Professores disseram que não ouviram alarme de incêndio.\n\nSegundo informações preliminares, o fogo teria começado por volta de 9h45 dentro de uma sala de aula da escola, no primeiro piso.",
+      "titulo": "Bacalhau gratinado",
+      "resumo": "Se tem um prato que é super apreciado é o bacalhau gratinado! É quase unânime a paixão por essa delícia assada e gratinada no forno! Para um almoço especial em família ou com amigos, este prato é garantia de sucesso à mesa!",
+      "rendimento": 4,
+      "tempoPreparo": 45,
+      "dificuldade": 1,
+      "categoria": 1,
+      "destaque": false,
+      "imagem": "https://cdn0.tudoreceitas.com/pt/posts/8/6/2/bacalhau_gratinado_11268_300_square.webp",
+      "dataPublicacao": "2023-03-29",
+      "ingredientes": [
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        }
+      ],
+      "modoPreparo": [
+        {
+          "passo": 1,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 4,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 3,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 6,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 2,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 5,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        }
+      ],
       "id": 2
     },
     {
-      "titulo": "Petrobras reduz preço do diesel para distribuidoras",
-      "categoria": 5,
-      "dataPublicacao": "2023-03-22",
-      "autor": "G1",
-      "imagem": "https://classic.exame.com/wp-content/uploads/2020/12/petrobras-2.jpg?quality=70&strip=info&w=960",
-      "corpo": "A Petrobras anunciou nesta quarta-feira (22) mais uma redução do preço do diesel para as distribuidoras. O valor passa de R$ 4,02 para R$ 3,84 por litro, uma redução de R$ 0,18 ou 4,47%.\n\nA medida vale a partir de quinta-feira (23) e os preços dos demais combustíveis não sofreram alteração. A última redução anunciada pela Petrobras foi no dia 28 de fevereiro, para diesel e gasolina.\n\nSegundo a estatal, a nova redução tem como objetivos principais a \"manutenção da competitividade dos preços da Petrobras\" frente às principais alternativas de suprimento dos clientes e a \"participação de mercado necessária para a otimização dos ativos de refino\".\nO recuo do preço do diesel acompanha a queda nos preços do barril de petróleo no mercado internacional. Nesta semana, os preços do petróleo foram ao seu nível mais baixo em quase 15 meses, afetados pela crise bancária persistente, que gera temores de uma desaceleração do crédito e da economia.\n\nO barril do tipo Brent, referência para os preços da Petrobras, chegaram à casa dos US$ 72,97. Nos momentos mais críticos dos preços de combustíveis, estavam no patamar de US$ 140.",
+      "titulo": "Merluza cozida",
+      "resumo": "Quem disse que peixe cozido não pode ser saboroso? Muitas vezes ficamos um pouco relutantes em comer peixe e fica difícil introduzir este alimento na nossa dieta semanal de um jeito saudável e gostoso. Esta receita de merluza em posta chega para comprovar que é possível variar no cardápio preparando uma receita de peixe branco de sabor suave, rico em proteínas, fósforo e potássio de um jeito muito simples.",
+      "rendimento": 2,
+      "tempoPreparo": 30,
+      "dificuldade": 2,
+      "categoria": 1,
+      "destaque": false,
+      "imagem": "https://cdn0.tudoreceitas.com/pt/posts/4/9/0/merluza_cozida_saborosa_10094_600.webp",
+      "dataPublicacao": "2023-03-28",
+      "ingredientes": [
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        }
+      ],
+      "modoPreparo": [
+        {
+          "passo": 1,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 4,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 3,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 6,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 2,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 5,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        }
+      ],
       "id": 3
+    },
+    {
+      "titulo": "Pirarucu à casaca",
+      "resumo": "Pirarucu à casaca, ou pirarucu de casaca é uma receita típica do Amazonas, com fortes influências da gastronomia indígena. Trata-se de um prato de peixe preparado com o chamado 'bacalhau do Amazonas' desfiado e misturado com vários ingredientes, tais como farinha uarini ova, leite de coco, banana e muito mais, que rende uma refeição completa. Cada família tem seu jeito de fazer pirarucu à casaca.",
+      "rendimento": 6,
+      "tempoPreparo": 240,
+      "dificuldade": 3,
+      "categoria": 1,
+      "destaque": true,
+      "imagem": "https://cdn0.tudoreceitas.com/pt/posts/8/1/4/pirarucu_a_casaca_3418_600.webp",
+      "dataPublicacao": "2023-03-27",
+      "ingredientes": [
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        }
+      ],
+      "modoPreparo": [
+        {
+          "passo": 1,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 4,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 3,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 6,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 2,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 5,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        }
+      ],
+      "id": 4
+    },
+    {
+      "titulo": "Bife na panela de pressão",
+      "resumo": "Um bife suculento e se desfazendo de tão macio é uma delícia não é mesmo? Esse bife preparado na panela de pressão fica exatamente assim e hoje no TudoReceitas vamos te ensinar todos os truques para você não errar quando for prepará-lo!",
+      "rendimento": 4,
+      "tempoPreparo": 30,
+      "dificuldade": 1,
+      "categoria": 2,
+      "destaque": true,
+      "imagem": "https://cdn0.tudoreceitas.com/pt/posts/0/6/0/bife_na_panela_de_pressao_11060_300_square.webp",
+      "dataPublicacao": "2023-03-26",
+      "ingredientes": [
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        }
+      ],
+      "modoPreparo": [
+        {
+          "passo": 1,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 4,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 3,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 6,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 2,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 5,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        }
+      ],
+      "id": 4
+    },
+    {
+      "titulo": "Ragu de frango com polenta",
+      "resumo": "Para essa receita de ragu com polenta cremosa escolhemos uma parte bastante saborosa do frango, as sobrecoxas. E, para agilizar o cozimento, optamos pela versão desossada. A combinação do frango com a polenta já é muito tradicional na nossa culinária, mas nessa versão de ragu ganhou um toque de sabor muito especial!",
+      "rendimento": 4,
+      "tempoPreparo": 45,
+      "dificuldade": 2,
+      "categoria": 3,
+      "destaque": true,
+      "imagem": "https://cdn0.tudoreceitas.com/pt/posts/7/7/3/ragu_de_frango_com_polenta_10377_600.webp",
+      "dataPublicacao": "2023-03-25",
+      "ingredientes": [
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        },
+        {
+          "quantidade": "1",
+          "ingrediente": "lorem ipsum"
+        }
+      ],
+      "modoPreparo": [
+        {
+          "passo": 1,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 4,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 3,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 6,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 2,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        },
+        {
+          "passo": 5,
+          "texto" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non tortor quis nulla faucibus aliquet luctus ut leo. Phasellus vulputate erat elit, id luctus ipsum hendrerit nec."
+        }
+      ],
+      "id": 4
     }
   ],
   "categorias": [
     {
-      "nome": "Mundo",
-      "id": 1
+      "id": 1,
+      "categoria": "Peixe"
     },
     {
-      "nome": "Brasil",
-      "id": 2
+      "id": 2,
+      "categoria": "Carne"
     },
     {
-      "nome": "Esporte",
-      "id": 3
+      "id": 3,
+      "categoria": "Aves"
     },
     {
-      "nome": "BBB",
-      "id": 4
+      "id": 4,
+      "categoria": "Sobremesas"
     },
     {
-      "nome": "Economia",
-      "id": 5
+      "id": 5,
+      "categoria": "Massa"
     },
     {
-      "nome": "Politica",
-      "id": 6
+      "id": 6,
+      "categoria": "Sopa"
     },
     {
-      "nome": "Famosos",
-      "id": 7
+      "id": 7,
+      "categoria": "Petiscos"
+    },
+    {
+      "id": 8,
+      "categoria": "Molho"
+    },
+    {
+      "id": 9,
+      "categoria": "Bebidas"
+    },
+    {
+      "id": 10,
+      "categoria": "Frutos do Mar"
     }
   ]
 }

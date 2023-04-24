@@ -1,0 +1,168 @@
+// SECTION PRINCIPAL
+.sectionHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// TITULO INICIAL
+.sectionHome .titulo1{
+    font-family: 'Roboto';
+    font-size: 220%;
+    font-weight: 700;
+    line-height: 56px;
+    margin-top: 49px;
+}
+
+// GALERIA DE IMAGENS
+.sectionHome .galeriaHome{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px 0px 0px 185px;
+}
+// CARDS DAS IMAGENS 
+.sectionHome .galeriaCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+    transition: 1s;
+}
+// EFEITO NO CARD
+.sectionHome .galeriaCards:hover{
+    transform: scale(1.1);
+}
+// DISPERSAO DAS INFOS DO CARD
+.sectionHome .galeriaCards .cardsHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+// IMAGEM DENTRO DO CARD
+.sectionHome .galeriaCards .cardsHome img{
+    height: 200px;
+    width: 200px;
+}
+// TEXTO DO CARD
+.sectionHome .galeriaCards .cardsHome p{
+    font-family: 'Roboto';
+    font-size: 110%;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+// BUTTON PRINCIPAL
+.sectionHome .btnHome button{
+    margin-top: 71px;
+    height: 60px;
+    width: 300px;
+    border-radius: 12px;
+    background-color: #FF9900;
+    border: none;
+    font-family: Roboto;
+    font-size: 120%;
+    font-weight: 500;
+    line-height: 35px;
+    color: #ffff;
+    transition: 1s;
+}
+// EFEITO BUTTON
+.sectionHome .btnHome button:hover{
+    background-color: #acf00d;
+}
+
+// SEGUNDO TITULO
+.sectionHome .titulo2{
+    font-family: 'Roboto';
+    font-size: 220%;
+    font-weight: 700;
+    line-height: 56px;
+    color: #000000;
+    margin-top: 58px;
+}
+
+// GALERIA DE BUTTONS
+.sectionHome .galeriaBtn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: center;
+    flex-direction: row;
+    padding: 35px;
+}
+// BUTTONS INDIVIDUAIS
+.sectionHome .galeriaBtn button{
+    height: 40px;
+    width: 215px;
+    background-color: #D9D9D9;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 110%;
+    font-weight: 500;
+    line-height: 23px;
+    color: #000000;
+    margin-top: 20px;
+    transition: 1s;
+}
+// EFEITO DOS BUTTON
+.sectionHome .galeriaBtn button:hover{
+    transform: scale(1.1);
+}
+
+// MEDIA QUERY ....................................................................................
+
+@media ( max-width:670px ){
+    // SECTION PRINCIPAL
+    .sectionHome .titulo1{
+        text-align: center;
+    }
+    // GALERIA DE CARDS INICIAL
+    .sectionHome .galeriaHome{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+    }
+    // CARDS INDIVIDUAIS
+    .sectionHome .galeriaCards{
+        margin: 10px; 
+        word-wrap: break-word;
+    }
+    // IMAGEM DOS CADS
+    .sectionHome .galeriaCards .cardsHome img{
+        height: 130px;
+        width: 130px;
+    }
+    // TEXTO DOS CARDS
+    .sectionHome .galeriaCards .cardsHome p{
+        font-family: 'Roboto';
+        font-size: 80%;
+        font-weight: 900;
+        line-height: 20px;
+    }
+    // SEGUNDO TITULO
+    .sectionHome .titulo2{
+        text-align: center;
+    }
+    // GALERIA DE BUTTONS
+    .sectionHome .galeriaBtn{
+        padding: 15px 30px 60px 20px
+    }
+    // INFORMAÇÕES DOS BUTTONS 
+    .sectionHome .galeriaBtn button{
+        height: 40px;
+        width: 152px; 
+        gap: 20px;
+        align-items: center;
+    }
+}
+
+
+

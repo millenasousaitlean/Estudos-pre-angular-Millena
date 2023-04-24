@@ -1,0 +1,65 @@
+
+
+.sectionLogin{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 400px;
+}
+
+.sectionLogin .cardLogin{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #3A3535;
+    height: 320px;
+    gap: 30px;
+    width: 40%;
+    border-radius: 12px;
+    transition: box-shadow ease-out 1s;
+    
+
+}
+
+.sectionLogin .cardLogin:hover{
+    box-shadow: 15px 15px 0 #AD0202, -15px -15px #AD0202;
+    -webkit-transition : box-shadow ease-out 0.6s;
+    transition : box-shadow ease-out 0.6s;
+}
+
+.sectionLogin .cardLogin input{
+    border-radius: 100px;
+    font-size: 100%;
+    width: calc(60% - 14px);
+    padding: 7px 0px 7px 7px;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.sectionLogin .cardLogin button{
+    background-color: #AD0202;   
+    border-radius: 100px;
+    border: none;
+    padding: 14px 0px;
+    font-size: 110%;
+    width: 60%;
+    color: white;
+    transition: 1s;
+}
+
+.sectionLogin .cardLogin button:hover{
+    background-color: rgb(67, 165, 22);
+}
+
+
+.sectionLogin .cardLogin input.inputRed{
+    border: 2px solid #AD0202;
+}
+
+.sectionLogin .cardLogin input.inputGreen{
+    border: 2px solid green;
+}

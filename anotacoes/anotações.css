@@ -1,4 +1,44 @@
+
+/* usado para muar os parametro da data: */
 /* ${data[i].dataPublicacao.split('-').reverse().join('/')}. */
 /* .split ('-')= para retirar o - e deixar em um array */
 /* reverse() = para reverter a ordem */
 /* join('/') = adiciona a / entre os arrays da data.*/
+
+
+
+
+
+/* caminho para rodar o servidor da pasta: ng s  */
+/* caminho para criar uma nova pasta cmder: ng generate commponent commponete/"nome da pasta" */
+/* caminho para criar uma aplicação crud: ng g s service/crud */
+
+
+/* Input que adiciona valor ao array */
+/* array :  numero: number; */
+/* <input type="text" (input)= "this.noticia = $event.target.value"/> */
+/* o comando "this.numero = ", irá atribuir um valor ao array 'numero'*/
+/* para pegar o valor a ser atribuido, usasse o comando "$event.target.valeu" */
+/* Desta forma o valor adicionado no input, será atribuido ao array numero */
+
+
+
+
+/* *ngIf e *ngFor */
+
+/* *ngIf */
+/* exemplo: 
+<h1 *ngIf="true"> Este aparece </h1>
+<h1 *ngIf="false"> Esse não aparece </h1> */
+/* O ngIf atribui uma condição de exibição para um determinado elemento,
+assim quando o elemento esta atribuido como "true" ele irá aparecer na tela,
+ja se o valor atribuido for "false" ele não irá aparecer na tela. */
+/* Outro exemplo: 
+<h1 *ngIf="numero === 1"> Esse será exibido! </h1> 
+<h1 *ngIf="numero !== 1"> Esse não será exibido! </h1> */
+/*  */
+
+
+
+
+

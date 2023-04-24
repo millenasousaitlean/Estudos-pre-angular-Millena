@@ -1,0 +1,11 @@
+<ng-container>
+    <section class="sectionLogin">
+        <div class="cardLogin">
+            <input [ngClass]="classesUser" type="text" placeholder="Username" [(ngModel)]="user">
+            <input [ngClass]="classesPass" type="password" placeholder="Password" [(ngModel)]="password">
+            <button type="button" (click)="cadastro()" >
+                LOGIN
+            </button>
+        </div>
+    </section>
+</ng-container>

@@ -48,6 +48,7 @@
     line-height: 70px;
     color: #FFFFFF;
     width: 70%;
+    text-shadow: 10px 10px 10px black;
 }
 .noticias .itemNoticia .textosNoticias h6{
     font-family: helvetica;
@@ -55,6 +56,8 @@
     font-size: 26px;
     line-height: 30px;
     color: #FFFFFF;
+    text-shadow: 10px 10px 10px black;
+
 }
 .noticias .itemNoticia .textosNoticias a{
     font-family: helvetica;
@@ -62,6 +65,8 @@
     font-size: 26px;
     line-height: 30px;
     color: #000AFF;
+    text-shadow: 10px 10px 10px black;
+
 }
 
 // LINK HOME
@@ -90,7 +95,13 @@
     text-align: center;
 }
 
+// MEDIA QUERY 
 
-
-
+@media ( min-width: 250px ) and ( max-width: 700px ){
+    .noticias .itemNoticia .textosNoticias h3{
+        font-weight: 700;
+        font-size: 170%;
+        line-height: 30px;
+    }
+}
 

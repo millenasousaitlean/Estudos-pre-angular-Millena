@@ -1,0 +1,49 @@
+<div class="tituloInterna">
+    <h1>
+        Receitas
+    </h1>
+</div>
+<div class="filtroInterna">
+    <div (click)="filtro(0)">
+        <h4>
+            Dificuldade
+        </h4>
+    </div>
+
+    <button type="button" class="btn1" (click)="filtro(1)">
+        Fácil
+    </button>
+    <button type="button" class="btn2" (click)="filtro(2)">
+        Médio
+    </button>
+    <button type="button" class="btn3" (click)="filtro(3)">
+        Díficil
+    </button>
+</div>
+<div class="boxGaleria">
+    <ng-container *ngFor="let i of receitas">
+        <ng-container *ngIf="i.categoria == idDaUrl || idDaUrl == 0">
+            <ng-container *ngIf="i.dificuldade == mostrarReceita || mostrarReceita == 0">
+                <div class="galeriaReceitas">
+                    <div class="cardsHome" routerLink="/detalhes-receitas/{{i.id}}/{{i.categoria}}">
+                        <div class="tipagem" *ngIf="i.dificuldade == 1" [ngClass]="verde">
+                            Fácil
+                        </div>
+                        <div class="tipagem" *ngIf="i.dificuldade == 2" [ngClass]="amarelo">
+                            Médio
+                        </div>
+                        <div class="tipagem" *ngIf="i.dificuldade == 3" [ngClass]="vermelho">
+                            Difícil
+                        </div>
+
+                        <img src={{i.imagem}} alt="...">
+                        <p>
+                            {{i.titulo}}
+                        </p>
+
+                    </div>
+                </div>
+            </ng-container>
+        </ng-container>
+    </ng-container>
+</div>
