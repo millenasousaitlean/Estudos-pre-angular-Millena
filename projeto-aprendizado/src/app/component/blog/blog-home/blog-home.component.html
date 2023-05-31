@@ -1,0 +1,34 @@
+<section>
+    <div class="cardPostagem" *ngFor="let n of posts">
+        <div class="conteudoCard">
+            <div  routerLink="/blog/interna/{{n.id}}">
+                <div class="infosAutorPostagem" routerLink="/blog/perfil/{{n.autor}}">
+                    <img [src]="fotoAutor(n.autor)" alt="">
+                    <div class="textInfosAutorPostagem">
+                        <h2 class="autor">
+                            {{ findAutores(n.autor) }}
+                        </h2>
+                        <h2 class="data">
+                            {{ converterData(n.data) }} - {{ n.data.split('T').reverse()[0].trim().split(':')[0] }}:{{
+                            n.data.split('T').reverse()[0].split(':')[1] }}
+                        </h2>
+                    </div>
+                </div>
+                <div class="textosCard">
+                    <h2 class="titulo">
+                        {{n.titulo}}
+                    </h2>
+                    <img class="img" [src]="n.imagem">
+                </div>
+            </div>
+            <div class="likeBtn">
+                <button type="button" (click)="curtidasPub(n)">
+                    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Curtir
+                </button>
+                <h2>
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>{{n.curtidas}}
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>

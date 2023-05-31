@@ -1,0 +1,75 @@
+<section>
+    <form [formGroup]="formComentario">
+
+        <div class="postInterna">
+            <div class="carInterna" *ngIf="post.id > 0">
+            <div class="nameCardInterna">
+                <div class="imgCardInterna" routerLink="/blog/perfil/{{post.autor}}">
+                    <img [src]="fotoAutor(post.autor)" alt="...">
+                </div>
+                <div class="textoCardInterna">
+                    <h4>
+                        {{acharAutor(post.autor)}}
+                    </h4>
+                    <h6>
+                        {{ converterData(post.data) }} - {{ post.data.split('T').reverse()[0].trim().split(':')[0] }}:{{
+                            post.data.split('T').reverse()[0].split(':')[1] }}
+                        </h6>
+                    </div>
+            </div>
+            <div class="principalTextCardInterna">
+                <h1>
+                    {{post.titulo}}
+                </h1>
+                <img class="imgBanner" [src]="post.imagem" alt="">
+                <p>
+                    {{post.texto}}
+                </p>
+            </div>
+        </div>
+        <div class="tituloComentarios">
+            <h2>
+                comentarios
+            </h2>
+        </div>
+        <div class="sectionComentarios" *ngFor="let coments of post.comentarios">
+            <div class="cardComentarios">
+                <div class="infosAutorComents">
+                    <img [src]="fotoAutor(coments.autor)" alt="">
+                    <div class="textinfosAutor">
+                        <h6>
+                            {{ acharAutor(coments.autor) }}
+                        </h6>
+                        <h4>
+                            {{ converterData(coments.data) }} - {{
+                                coments.data.split('T').reverse()[0].trim().split(':')[0] }}:{{
+                                    coments.data.split('T').reverse()[0].split(':')[1] }}
+                                </h4>
+                            </div>
+                        </div>
+                <span>
+                    {{coments.texto}}
+                </span>
+                <div class="likeBtn">
+                    <button type="button" (click)="fnLike(coments)" [ngClass]="{ 'curtido': checkLike(coments) }">
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Curtir
+                    </button>
+                    <h2>
+                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>{{coments.curtidas.length}}
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="comentariosSectionInterna">
+            <h4>
+                Fazer comentario
+            </h4>
+            <textarea id="" rows="5" formControlName="texto" 
+            [ngClass]="{ 'invalid': (formComentario.controls['texto'].status == 'INVALID' && formComentario.controls['texto'].touched) }"></textarea>
+            <button [disabled]="formComentario.status == 'INVALID' " type="button"  class="btnLike"  (click)="fazerComentario()" >
+                comentar
+            </button>
+        </div>
+    </div>
+</form>
+</section>

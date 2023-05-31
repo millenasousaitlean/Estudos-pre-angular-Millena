@@ -1,0 +1,67 @@
+.tabela{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 80%;
+    border: 1px solid #ddd;
+}
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'roboto';
+    margin-top: 30px;
+}
+th,td{
+    font-family: 'roboto';
+    text-align: left;
+    padding: 12px;
+}
+tbody tr:nth-child(odd){
+    background-color: #f2f2f2;
+}
+.btnEditar{
+    background-color: #dfca0e;
+    border: none;
+    border-radius: 15px;
+    padding: 5px  20px;
+    color: #000000;
+    font-family: 'roboto';
+    font-weight: 600;
+}
+.btnDeletar{
+    background-color: #df0e0e;
+    border: none;
+    border-radius: 15px;
+    padding: 5px  20px;
+    color: #ffffff;
+    font-family: 'roboto';
+    font-weight: 600;
+}
+.btnAdicionar{
+    background-color: #589b21;
+    border: none;
+    border-radius: 15px;
+    padding: 5px  20px;
+    color: #000000;
+    font-family: 'roboto';
+    font-weight: 600;
+    margin: 10px;
+}
+.btnSalvar{
+    background-color: #1d86af;
+    border: none;
+    border-radius: 15px;
+    padding: 5px  20px;
+    color: #ffffff;
+    font-family: 'roboto';
+    font-weight: 600;
+    margin: 10px;
+}

@@ -1,0 +1,100 @@
+<section>
+    <div class="topoPerfilPag">
+        <div class="topoInfosUser">
+            <img [src]="fotoAutor(autos.id)" alt="">
+            <div class="textInfoUser">
+                <h2>
+                    {{ findAutores(posts.autor) }}
+                </h2>
+                <h4>
+
+                </h4>
+            </div>
+        </div>
+        <div class="infosPerfilUser">
+            <div class="boxTextUser">
+                <span>
+                    Status: {{autos.resumo}}
+                </span>
+            </div>
+            <div class="boxBtn">
+                <h2>
+                    Curtidas no perfil: {{autos.curtidas}}
+                </h2>
+                <button type="button" (click)="likesPerfil()">
+                    Curtir Perfil
+                </button>
+                <button type="button">
+                    Imagens
+                </button>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div >
+            <ul>
+                <li class="titulo">
+                    {{mostrarPostagens(posts.autor)}}
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="cardPostagem">
+            <div class="conteudoCard">
+                <div routerLink="/blog/interna/{{posts.id}}">
+                    <div class="infosAutorPostagem" routerLink="/blog/perfil/{{posts.id}}">
+                        <img [src]="fotoAutor(posts.autor)" alt="...">
+                        <div class="textInfosAutorPostagem">
+                            <h2 class="autor">
+                                {{ findAutores(posts.autor) }}
+                            </h2>
+                            <h2 class="data">
+                                {{ converterData(posts.data) }} - {{
+                                posts.data.split('T').reverse()[0].trim().split(':')[0]
+                                }}:{{ posts.data.split('T').reverse()[0].split(':')[1] }}
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="textosCard">
+                        <h2 class="titulo">
+                            {{mostrarPostagens(posts.autor)}}
+                        </h2>
+                        <img class="img" [src]="posts.imagem">
+                    </div>
+                </div>
+                <div class="cardLikes">
+                    <div class="sectionComentarios" *ngFor="let coments of posts.comentarios">
+                        <div class="cardComentarios">
+                            <div class="infosAutorComents">
+                                <img [src]="fotoAutor(coments.autor)" alt="">
+                                <div class="textinfosAutor">
+                                    <h6>
+                                        {{ findAutores(coments.autor) }}
+                                    </h6>
+                                    <h4>
+                                        {{ converterData(coments.data) }} - {{
+                                        coments.data.split('T').reverse()[0].trim().split(':')[0] }}:{{
+                                        coments.data.split('T').reverse()[0].split(':')[1] }}
+                                    </h4>
+                                </div>
+                            </div>
+                            <div>
+                                <span>
+                                    {{coments.texto}}
+                                </span>
+                            </div>
+                            <div class="likeBox">
+                                <h3> curtidas {{mostrarCurtidas()}}</h3>
+                                <button type="button" (click)="curtidasPub()">
+                                    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Curtir
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngFor="">
+
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+</section>

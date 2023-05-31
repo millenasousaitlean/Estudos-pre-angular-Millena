@@ -1,0 +1,53 @@
+<nav class="barraLateral">
+    <div class="barraNav">
+        <div class="tituloSideBar">
+            <span>
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </span>
+        </div>
+        <div class="botoesMenu">
+            <ul>
+                <li routerLink="/crud">
+                    <span class="icon-menu">
+                        <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                    </span>
+                    <span class="txt-icon">
+                        Produtos Crud
+                    </span>
+                </li>
+                <li routerLink="/blog/perfil/4" [ngClass]="{ 'ativo': (router.url == '/blog/perfil') }">
+                    <span class="icon-menu">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </span>
+                    <span class="txt-icon">
+                        Perfil blog
+                    </span>
+                </li>
+                <li routerLink="/blog">
+                    <span class="icon-menu">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </span>
+                    <span class="txt-icon">
+                        Home Blog
+                    </span>
+                </li>
+                <li routerLink="/blog/criar" [ngClass]="{ 'ativo': (router.url == '/blog/criar') }">
+                    <span class="icon-menu">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>
+                    </span>
+                    <span class="txt-icon">
+                        New post/Blog
+                    </span>
+                </li>
+                <li routerLink="/blog/cadastro" [ngClass]="{ 'ativo': (router.url == '/blog/cadastro') }">
+                    <span class="icon-menu" >
+                        <i class="fa fa-user-plus" aria-hidden="true"></i>                    </span>
+                    <span class="txt-icon">
+                        cadastro blog
+                    </span>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>

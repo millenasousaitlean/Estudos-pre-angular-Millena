@@ -1,0 +1,235 @@
+section {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .topoPerfilPag {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 1px 10px 10px -10px rgb(195, 198, 211);
+
+        .topoInfosUser {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 35px 0px 60px 160px;
+            gap: 30px;
+
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+                box-shadow: 0px 0px 10px 2px #1df0ff;
+            }
+
+            .textInfoUser {
+                font-family: 'roboto';
+                font-size: 16px;
+                color: rgb(47,46,65);
+            }
+
+        }
+
+        .infosPerfilUser {
+            margin-left: 60px;
+
+            .boxTextUser {
+                margin: 60px 0px 35px 0px;
+                width: 600px;
+                font-family: 'roboto';
+                color: rgb(47,46,65);
+                font-size: 15px;
+            }
+
+
+            .boxBtn {
+                display: flex;
+                flex-direction: row;
+
+                h2{
+                    color: rgb(47,46,65);
+                    font-family: 'roboto';
+                    font-size: 18px;
+
+                }
+
+                button {
+                    width: 120px;
+                    height: 25px;
+                    background-color: rgb(253,118,15);
+                    border-radius: 10px;
+                    border: none;
+                    margin: 0px 30px 0px 60px;
+                    color: #ffffff;
+                    font-weight: 700;
+                    font-family: 'roboto';
+                    // box-shadow: 0px 0px 7px 1px #fd760f;
+
+                }
+            }
+
+
+        }
+
+
+    }
+
+    section {
+        // margin-left: 350px;
+        margin-top: 25px;
+
+        .cardPostagem {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 30px;
+
+            .conteudoCard {
+                width: 800px;
+                height: auto;
+                text-align: left;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                border-radius: 12px;
+                box-shadow: 0px 0px 20px 0px rgb(195, 198, 211);
+
+                .infosAutorPostagem {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 10px;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 100%;
+                    }
+
+                    .textInfosAutorPostagem {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 5px 0px 0px 10px;
+
+                        .autor {
+                            font-size: 13px;
+                            font-family: 'roboto';
+                            color: #353232;
+                        }
+
+                        .data {
+                            font-size: 11px;
+                            font-family: 'roboto';
+                            color: #353232;
+
+                        }
+
+                    }
+
+                }
+
+
+                .textosCard {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    margin: 0px 0px 0px 65px;
+
+                    img {
+                        width: 450px;
+                        height: 340px;
+                        background-size: cover;
+                        border-radius: 8px;
+
+                    }
+
+                    .titulo {
+                        font-size: 17px;
+                        font-family: 'roboto';
+                        margin: 15px 0px 15px 0px;
+                        color: #353232;
+
+                    }
+
+                }
+
+                .sectionComentarios {
+                    width: 80%;
+                    margin-bottom: 30px;
+        
+                    .cardComentarios {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        font-family: 'roboto';
+                        margin-top: 30px;
+                        border-radius: 12px;
+                        margin: 10px 20px 10px 20px ;
+                        box-shadow: 3px 0px 20px 0px rgb(159, 165, 184);
+        
+                        .likeBox{
+                            display: flex;
+                            flex-direction: row;
+
+                            button{
+                                // margin-top: 20px;
+                                width: 100px;
+                                height: 25px;
+                                background-color: rgb(22, 122, 216);
+                                border: none;
+                                border-radius: 15px;
+                                color: #ffffff;
+                                font-family: 'roboto';
+                                font-weight: 500;
+            
+                            }
+                        }
+        
+        
+                        .infosAutorComents {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+        
+                            img {
+                                width: 50px;
+                                height: 50px;
+                                margin: 10px 20px 30px 10px;
+                                border-radius: 100%;
+                            }
+        
+        
+        
+                            .textinfosAutor {
+                                display: flex;
+                                flex-direction: column;
+                                color: rgb(70, 69, 69);
+        
+                                h6 {
+                                    font-size: 13px;
+                                }
+        
+                                h4 {
+                                    font-size: 11px;
+                                }
+
+                                span {
+                                    font-size: 12px;
+                                    color: rgb(82, 82, 82);
+                                }
+                            }
+        
+                        }
+                    }
+        
+                }
+            }
+
+            
+        }
+    }
+
+}

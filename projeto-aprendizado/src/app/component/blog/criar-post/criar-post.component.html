@@ -1,0 +1,74 @@
+<section>
+    <div class="cardNewPost">
+        <div class="iconNewPost">
+            <img src="assets/undraw_Team_up_re_84ok.png" alt="...">
+        </div>
+        <div class="formCardNewPost">
+            <h1>
+                Criar novo post
+            </h1>
+
+            <form [formGroup]="formPost">
+                <div class="infosTitulo">
+                    <label for="tituloInput">
+                        Titulo
+                    </label>
+                    <input id="tituloInput" type="text" formControlName="titulo" [ngClass]="{ 'invalid': (formPost.controls['titulo'].status == 'INVALID' 
+                    && formPost.controls['titulo'].touched) }">
+                    <small
+                        *ngIf="formPost.controls['titulo'].status == 'INVALID' && formPost.controls['titulo'].touched">
+                        Campo inválido</small>
+                </div>
+                <div>
+                    <p *ngIf="formPost.controls['titulo'].status == 'INVALID' && formPost.controls['titulo'].touched">
+                        Erro no campo título
+                    </p>
+                </div>
+                <div class="infosAutor">
+                    <label for="tituloInput">
+                        ID do autor
+                    </label>
+                    <input id="autorInput" type="number" formControlName="autor" [ngClass]="{ 'invalid': (formPost.controls['autor'].status == 'INVALID' 
+                    && formPost.controls['autor'].touched) }">
+                    <small *ngIf="formPost.controls['autor'].status == 'INVALID' && formPost.controls['autor'].touched">
+                        Campo inválido</small>
+                </div>
+                <div>
+                    <p *ngIf="formPost.controls['autor'].status == 'INVALID' && formPost.controls['autor'].touched">
+                        Erro no campo Autor
+                    </p>
+                </div>
+                <div class="infosTexto">
+                    <label for="tituloInput">
+                        Texto do post
+                    </label>
+                    <textarea id="textoInput" rows="20" formControlName="texto"
+                        [ngClass]="{ 'invalid': (formPost.controls['texto'].status == 'INVALID' && formPost.controls['texto'].touched) }"></textarea>
+                    <small
+                        *ngIf="formPost.controls['texto'].status == 'INVALID' && formPost.controls['texto'].touched">Campo
+                        inválido</small>
+                </div>
+                <div>
+                    <p *ngIf="formPost.controls['texto'].status == 'INVALID' && formPost.controls['texto'].touched">
+                        Erro no campo texto
+                    </p>
+                </div>
+                <div class="infosImg">
+                    <label for="imagemInput">
+                        URL da Imagem
+                    </label>
+                    <input id="imagemInput" type="text" formControlName="imagem">
+                </div>
+
+                <button [disabled]="formPost.status === 'INVALID'" type="button" (click)="criarPost()">
+                    Adicionar Post
+                </button>
+
+
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- *ngIf="(formPost.controls.titulo.status == 'INVALID' && formPost.controls['titulo'].touched)" -->
+<!-- [ngClass]="{ 'invalid': (formPost.controls.titulo.status == 'INVALID' && formPost.controls['titulo'].touched) }" -->

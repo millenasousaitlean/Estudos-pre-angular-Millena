@@ -1,0 +1,185 @@
+section {
+    width: 70%;
+    margin: 130px 0px 0px 258px;
+
+
+    .postInterna {
+        display: flex;
+        flex-direction: column;
+
+
+        .carInterna {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 3px 0px 20px 0px rgb(159, 165, 184);
+            font-family: 'roboto';
+
+            .nameCardInterna {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .imgCardInterna img {
+                    width: 70px;
+                    height: 70px;
+                    margin: 10px;
+                    border-radius: 100%;
+                }
+
+                // .textoCardInterna {}
+
+            }
+
+            img {
+                margin-top: 20px;
+                width: 600px;
+                height: 400px;
+            }
+
+            .principalTextCardInterna {
+                margin-top: 30px;
+                font-family: 'roboto';
+
+                h1 {
+                    font-size: 25px;
+                    color: rgb(7, 7, 122);
+                }
+
+                p {
+                    margin-top: 20px;
+                }
+
+            }
+        }
+
+        .tituloComentarios {
+            font-size: 17px;
+            font-family: 'roboto';
+            margin-top: 25px;
+            color: rgb(7, 35, 88);
+        }
+
+        .sectionComentarios {
+            width: 100%;
+
+            .cardComentarios {
+                display: flex;
+                flex-direction: column;
+                font-family: 'roboto';
+                margin-top: 30px;
+                border-radius: 12px;
+                padding: 30px;
+                box-shadow: 3px 0px 20px 0px rgb(159, 165, 184);
+
+                span {
+                    margin: 0px 0px 10px 100px;
+                    width: 550px;
+                    word-wrap: break-word;
+                    font-size: 14px;
+                    color: rgb(82, 82, 82);
+                    
+                }
+                .likeBtn{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: 20px;
+                    margin-right: 40px;
+
+                    button{
+                        width: 100px;
+                        height: 25px;
+                        background-color: rgb(22, 122, 216);
+                        border: none;
+                        border-radius: 15px;
+                        color: #ffffff;
+                        font-family: 'roboto';
+                        font-weight: 500;
+                    }
+
+                    h2{
+                        font-size: 20px;
+                        color: rgb(17, 20, 49);
+                    }
+                }
+
+                .infosAutorComents {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        margin: 10px;
+                        border-radius: 100%;
+                    }
+
+
+
+                    .textinfosAutor {
+                        display: flex;
+                        flex-direction: column;
+                        color: rgb(70, 69, 69);
+
+                        h6 {
+                            font-size: 13px;
+                        }
+
+                        h4 {
+                            font-size: 11px;
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+        .comentariosSectionInterna {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+
+
+            h4 {
+                margin: 0px 0px 10px 10px;
+                font-size: 20px;
+                font-family: 'roboto';
+                color: rgb(7, 35, 88);
+            }
+
+            textarea {
+                width: 800px;
+                height: 120px;
+                border-radius: 12px;
+            }
+
+            button {
+                margin: 15px;
+                width: 120px;
+                height: 25px;
+                border-radius: 20px;
+                border: none;
+                background-color: rgb(9, 131, 49);
+                font-size: 15px;
+                
+                color: black;
+                margin-left: 680px;
+
+            }
+        }
+    }
+    .invalid {
+        border: 1px solid red;
+    }
+
+
+
+
+
+
+}

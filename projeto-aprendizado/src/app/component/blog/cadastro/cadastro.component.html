@@ -1,0 +1,99 @@
+<section>
+    <div class="formGroupLogin">
+        <div class="tituloForms">
+            <h1>
+                CADASTRO
+            </h1>
+        </div>
+        <form [formGroup]="">
+            <div class="infosLogin">
+                <div class="inputsMode">
+                    <label for="nameInput">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                    </label>
+                    <input id="nameInput" placeholder="Name" type="text">
+                </div>
+                <small>
+                    Campo Inválido!
+                </small>
+            </div>
+            <div class="infosLogin">
+                <div class="inputsMode">
+                    <label for="userInput">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                    </label>
+                    <input id="userInput" placeholder="Username" type="text">
+                </div>
+                <small>
+                    Campo Inválido!
+                </small>
+            </div>
+            <div class="infosLogin">
+                <div class="inputsMode">
+                    <label for="passwordInput">
+                        <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                    </label>
+                    <input id="passwordInput" placeholder="Password" type="text">
+                </div>
+                <small>
+                    Campo Inválido!
+                </small>
+            </div>
+            <div class="infosLogin">
+                <div class="inputsMode">
+                    <label for="passwordInput">
+                        <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                    </label>
+                    <input id="passwordInput" placeholder="Confirm Password" type="text">
+                </div>
+                <small>
+                    Campo Inválido!
+                </small>
+            </div>
+            <div class="passwordForms">
+                <h2>
+                    Já é cadastrado ?
+                </h2>
+                <button type="button">
+                    Cadastrar
+                </button>
+            </div>
+            <div>
+                <!-- <p *ngIf="formPost.controls['titulo'].status == 'INVALID' && formPost.controls['titulo'].touched">
+                    Erro no campo login
+                </p> -->
+            </div>
+            <!-- 
+                <div class="infosTitulo">
+                <label for="tituloInput">
+                    Login
+                </label>
+                <input id="loginInput" type="text" formControlName="login" [ngClass]="{ 'invalid': (formPost.controls['login'].status == 'INVALID' 
+                && formPost.controls['login'].touched) }">
+                <small
+                    *ngIf="formPost.controls['login'].status == 'INVALID' && formPost.controls['login'].touched">
+                    Campo inválido</small>
+            </div>
+            <div>
+                <p *ngIf="formPost.controls['titulo'].status == 'INVALID' && formPost.controls['titulo'].touched">
+                    Erro no campo login
+                </p>
+            </div>
+            <div class="infosAutor">
+                <label for="senhaInput">
+                    Senha
+                </label>
+                <input id="senhaInput" type="text" formControlName="senha" [ngClass]="{ 'invalid': (formPost.controls['senha'].status == 'INVALID' 
+                && formPost.controls['senha'].touched) }">
+                <small *ngIf="formPost.controls['senha'].status == 'INVALID' && formPost.controls['senha'].touched">
+                    Campo inválido</small>
+                </div> -->
+                
+                
+            </form>
+        </div>
+
+        <div class="imgLogin">
+            <img src="assets/cadastro.png.png" alt="">
+        </div>
+</section>

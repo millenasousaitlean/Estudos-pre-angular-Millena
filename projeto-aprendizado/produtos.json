@@ -1,0 +1,28 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nomeProduto": "Celular",
+      "precoProduto": 3000,
+      "estoqueProduto": 300
+    },
+    {
+      "nomeProduto": "TV",
+      "precoProduto": 500,
+      "estoqueProduto": 25,
+      "id": 2
+    },
+    {
+      "nomeProduto": "mouse",
+      "precoProduto": 300,
+      "estoqueProduto": 24,
+      "id": 3
+    },
+    {
+      "id": 4,
+      "nomeProduto": "radio",
+      "precoProduto": 200,
+      "estoqueProduto": 10
+    }
+  ]
+}

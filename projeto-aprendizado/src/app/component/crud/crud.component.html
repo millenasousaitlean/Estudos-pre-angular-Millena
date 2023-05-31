@@ -1,0 +1,86 @@
+<div class="tabela">
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Produto
+                </th>
+                <th>
+                    Valor
+                </th>
+                <th>
+                    Estoque
+                </th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let prod of produtos">
+                <td>
+                    {{prod.id}}
+                </td>
+                <td>
+                    {{prod.nomeProduto}}
+                </td>
+                <td>
+                    {{prod.precoProduto}}
+                </td>
+                <td>
+                    {{prod.estoqueProduto}}
+                </td>
+                <td>
+                    <button type="button" class="btnEditar" (click)="pegarInfosEdicao(prod.id)">
+                        Editar
+                    </button>
+                </td>
+                <td>
+                    <button type="button" class="btnDeletar" (click)="selecionarProduto(prod.id)">
+                        Deletar
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="form">
+    <h2>
+        Novo Produto
+    </h2>
+    <div>
+        <label for="">Nome do produto</label>
+        <input type="text" placeholder="Digite aqui ..." [(ngModel)]="produtoCriado.nomeProduto">
+    </div>
+    <div>
+        <label for="">Preço do produto</label>
+        <input type="number" placeholder="Digite aqui ..." [(ngModel)]="produtoCriado.precoProduto">
+    </div>
+    <div>
+        <label for="">Estoque do produto</label>
+        <input type="number" placeholder="Digite aqui ..." [(ngModel)]="produtoCriado.estoqueProduto">
+    </div>
+    <div >
+        <button class="btnAdicionar" (click)="validateProduto()">
+            inserir produto
+        </button>
+        <!-- <button class="btnSalvar" (click)="validateProduto()">
+            Salvar edição
+        </button> -->
+    </div>
+</div>
+
+
+<!-- 
+    valide todos os campos ao apertar o botão
+    Preço tem que ser maior que zero a ser um número
+    Estoque precisa ser um número inteiro  
+-->
+
+<!-- 
+    Insira um botão para editar o produto na linha de cada um dos produtos que ao clicar preenche os campos
+    da parte baixo com as informações do item clicado e ao salvar ele edita o item após validar
+    Insira outro botão para deletar o produto selecionado ao ser clicado
+ -->
