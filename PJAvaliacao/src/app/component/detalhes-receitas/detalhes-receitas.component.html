@@ -81,10 +81,14 @@
         <ng-container *ngFor="let i of receitasAleatorias"> <!-- ngFor PARA PUXAR AS RECEITAS NA PAGINA -->
             <div class="galeriaCards" routerLink="/detalhes-receitas/{{i.id}}/{{i.categoria}}"> <!-- routerLink PARA QUANDO CLICAR NO CARD ELE CARREGUE NA PAGINA SENDO DA MESMA CATEGORIA QUE A RECEITA -->
                 <div class="cardsHome">
-                    <img src={{i.imagem}} alt="...">
-                    <p>
+                    <div class="imgCard">
+                        <img src={{i.imagem}} alt="...">
+                    </div>
+                    <div class="textCard">
+                     <p>
                         {{i.titulo}}
-                    </p>
+                    </p>   
+                    </div>
                 </div>
             </div>
         </ng-container>

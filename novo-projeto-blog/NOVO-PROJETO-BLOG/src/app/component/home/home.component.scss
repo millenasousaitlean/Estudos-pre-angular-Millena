@@ -1,0 +1,60 @@
+section {
+    width: 90%;
+    margin-left: 350px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+
+    .containerCardsPost {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        // margin-left: 50px;
+        
+
+        .cardHomePost {
+            display: flex;
+            flex-direction: column;
+            width: 380px;
+            height: 250px;
+            border: 4px solid #007AEB;
+            border-radius: 12px;
+
+            .textCardPost {
+                margin: 25px;
+                height: 100px;
+
+                p {
+                    font-family: 'roboto';
+                    text-align: center;
+                    font-size: 22px;
+                }
+
+            }
+
+            .infosCardHome {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 50px 25px 0px 25px;
+
+                h4 {
+                    font-family: 'roboto';
+                    font-size: 18px;
+                }
+
+                h3 {
+                    font-family: 'roboto';
+                    font-size: 18px;
+                }
+            }
+
+
+        }
+
+    }
+
+}

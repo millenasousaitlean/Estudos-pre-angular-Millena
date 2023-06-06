@@ -54,6 +54,7 @@ export class DetalhesReceitasComponent implements OnInit {
   ngOnChange(): void {
     this.rotaAtiva.params.subscribe((params) => {
       this.idDaUrl = params['id']
+      this.mudarOrdenar(this.receitas)
     })
   }
 
@@ -73,6 +74,7 @@ export class DetalhesReceitasComponent implements OnInit {
       )
     })
   }
+
   // SORTEAR OS CARDS ALEATORIAMENTE E PUXAR DA MESMA CATEGORIA DA RECEITA DA PAGINA
   sorteReceita(data: Receitas[]): void {
     let filCateg = data.filter((receitas: Receitas) => receitas.categoria == this.idDaCateg)
@@ -86,11 +88,23 @@ export class DetalhesReceitasComponent implements OnInit {
     }
   }
 
+  mudarOrdenar(data: Receitas[]): void {
+    let encontrarItem = data.find((data: Receitas) =>
+      data.id == this.idDaUrl)
+    console.log(encontrarItem)
+    let ordenaItens = encontrarItem?.modoPreparo.sort((a: ModoPreparo, b: ModoPreparo) => {
+      return a.passo - b.passo 
+    }
+    )
+  }
+
 }
+
+
 
 // FORMA PARA DEIXAR OS CARDS EM ALEATORIO 
 
-// sorteReceita(data: Receitas[]) {
+// sorteReceita(data: Receitas[]): void {
 //   for (let i = 0; i < 3; i++) {
 //     let n = Math.floor(Math.random() * 107)
 //     let rec = this.receitasAleatorias.splice(n, 1)[0]

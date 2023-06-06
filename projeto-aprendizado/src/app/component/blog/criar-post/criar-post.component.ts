@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms'
 import { Autor } from 'src/app/model/blog/autor';
 import { Post } from 'src/app/model/blog/post';
-import { AutoresService } from 'src/app/service/autores.service';
-import { BlogService } from 'src/app/service/blog.service';
+import { AutoresService } from 'src/app/service/blog/autores.service';
+import { BlogService } from 'src/app/service/blog/blog.service';
 
 @Component({
   selector: 'app-criar-post',

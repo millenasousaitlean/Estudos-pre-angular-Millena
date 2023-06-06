@@ -1,0 +1,52 @@
+<section>
+    <div class="containerInterna">
+
+        <div class="textBannerInterna">
+            <div class="tituloBanner">
+                <p>
+                    {{posts.title}}
+                </p>
+            </div>
+            <div class="userBanner">
+                <h3>
+                    {{findAutor(posts.userId)}}
+                </h3>
+                <h4>
+                    {{finUser(posts.userId)}}
+                </h4>
+            </div>
+        </div>
+        <div class="textCorpoInterna">
+            <div class="textPrincipal">
+                <p>
+                    {{posts.body}}
+                </p>
+            </div>
+            <div class="tituloComments">
+                <h1>
+                    Comments
+                </h1>
+            </div>
+            <div class="containerComments">
+                <ng-container *ngFor=" let cont of comments">
+                    <div class="cardComments" *ngIf="cont.postId == idDaUrl">
+                        <div class="infosUserComments">
+                            <h4>
+                                {{cont.name}}
+                            </h4>
+                            <h3>
+                                {{cont.email}}
+                            </h3>
+                        </div>
+                        <div class="corpoCarComments">
+                            <p>
+                                {{cont.body}}
+                            </p>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+
+    </div>
+</section>

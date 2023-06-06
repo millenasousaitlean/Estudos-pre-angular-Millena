@@ -1,0 +1,356 @@
+<!-- DEPARTAMENTOS -->
+<section id="sessaoDepartamentos">
+    <ng-container *ngIf="router.url.includes ('/cms/departamentos')">
+        <div class="contBtn">
+            <button type="button" class="btnAdd" (click)="openModalAdd()">
+                Adicionar departamento
+            </button>
+            <button type="button" class="btnProd" routerLink="/cms/produtos">
+                Ver produtos
+            </button>
+
+        </div>
+        <div class="tableContainer">
+            <thead>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Departamento
+                </th>
+                <th></th>
+                <th></th>
+            </thead>
+            <tr *ngFor="let n of departamento">
+                <td>
+                    {{n.id}}
+                </td>
+                <td>
+                    {{n.departamento}}
+                </td>
+                <td>
+                    <button type="button" class="btnEdit" (click)="openModalEdit()">
+                        Editar
+                    </button>
+                </td>
+                <td>
+                    <button type="button" class="btnDelet" (click)="mostraPeloIdDep(n.id)">
+                        Deletar
+                    </button>
+                </td>
+            </tr>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="mostrarModalEdit">
+        <div class="modal">
+            <div class="container-Modal">
+                <h1 id="close-Modal" (click)="closeModal()">
+                    X
+                </h1>
+                <div class="title-Modal">
+                    <h1>
+                        Editar
+                    </h1>
+                </div>
+                <div class="form-Modal">
+                    <form [formGroup]="formDepart">
+                        <div class="infosDepartamento">
+                            <label for="departamentoInput">
+                                Nome do departamento
+                            </label>
+                            <input id="DepartamentoInput" type="text" formControlName="departamento" [ngClass]="{ 'invalid': (formDepart.controls['departamento'].status == 'INVALID' 
+                    && formDepart.controls['departamento'].touched) }">
+                            <!-- <small
+                        *ngIf="formDepart.controls['departamento'].status == 'INVALID' && formDepart.controls['departamento'].touched">
+                        Campo inválido</small> -->
+                        </div>
+                    </form>
+                    <div class="btnEdit-Modal">
+                        <button (click)="editarDepartamento()">
+                            Editar Departamento
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+    <ng-container *ngIf="mostrarModalAdd">
+        <div class="modal">
+            <div class="container-Modal">
+                <h1 id="close-Modal" (click)="closeModal()">
+                    X
+                </h1>
+                <div class="title-Modal">
+                    <h1>
+                        Adicionar
+                    </h1>
+                </div>
+                <div class="form-Modal">
+                    <form [formGroup]="formDepart">
+                        <div class="infosDepartamento">
+                            <label for="departamentoInput">
+                                Nome do Departamento
+                            </label>
+                            <input id="DepartamentoInput" type="text" formControlName="departamento" [ngClass]="{ 'invalid': (formDepart.controls['departamento'].status == 'INVALID' 
+                    && formDepart.controls['departamento'].touched) }">
+                            <small
+                                *ngIf="formDepart.controls['departamento'].status == 'INVALID' && formDepart.controls['departamento'].touched">
+                                Campo inválido</small>
+                        </div>
+                    </form>
+                    <div class="btnAdd-Modal">
+                        <button (click)="addDepartamento()">
+                            Adicionar Departamento
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+</section>
+
+
+<!-- PRODUTOS -->
+
+<section id="sessaoProdutos">
+    <ng-container *ngIf="router.url.includes ('/cms/produtos')">
+        <div class="contBtn-Prod">
+            <Button type="button" class="btnAdd" (click)="openModalAddProd()">
+                Adicionar Produtos
+            </Button>
+            <Button type="button" class="btnProd" routerLink="/cms/departamentos">
+                Ver Departamentos
+            </Button>
+        </div>
+        <div class="tableContainer">
+            <thead>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    Imagem
+                </th>
+                <th>
+                    Preço
+                </th>
+                <th>
+                    Departamento
+                </th>
+                <th>
+                    Estoque
+                </th>
+                <th>
+                    Descrição
+                </th>
+            </thead>
+            <tr *ngFor="let p of produtos">
+                <td>
+                    {{p.id}}
+                </td>
+                <td>
+                    {{p.nome}}
+                </td>
+                <td>
+                    <img src="{{p.imagem}}" alt="...">
+                </td>
+                <td>
+                    {{p.preco}}
+                </td>
+                <td>
+                    {{nameDepart(p.departamento)}}
+                </td>
+                <td>
+                    {{p.estoque}}
+                </td>
+                <td>
+                    <div class="tdDescricao">
+                        {{p.descricao}}
+                    </div>
+                </td>
+                <td>
+                    <button class="btnEdit" type="button" (click)="openModalEditProd(p.id)">
+                        Editar
+                    </button>
+                </td>
+                <td>
+                    <button class="btnDelet" type="button" (click)="mostrarPeloIdProd(p.id)">
+                        Deletar
+                    </button>
+                </td>
+            </tr>
+        </div>
+    </ng-container>
+
+    <ng-container *ngIf="mostrarModalEditProd">
+        <div class="modal">
+            <div class="container-Modal">
+                <h1 id="close-Modal" (click)="closeModal()">
+                    X
+                </h1>
+                <div class="title-Modal">
+                    <h1>
+                        Editar
+                    </h1>
+                </div>
+                <div class="form-Modal">
+                    <form [formGroup]="formDepart">
+                        <div class="infosProdutos">
+                            <label for="nomeInput">
+                                Nome do produto
+                            </label>
+                            <input id="nomeInput" type="text" formControlName="nome" [ngClass]="{ 'invalid': (formDepart.controls['nome'].status == 'INVALID' 
+                    && formDepart.controls['nome'].touched) }">
+                            <small
+                        *ngIf="formDepart.controls['nome'].status == 'INVALID' && formDepart.controls['nome'].touched">
+                        Campo inválido</small>
+                        </div>
+                        <div class="infosProdutos">
+                            <label for="precoInput">
+                                Preço do produto
+                            </label>
+                            <input id="precoInput" type="number" formControlName="preco" [ngClass]="{ 'invalid': (formDepart.controls['preco'].status == 'INVALID' 
+                    && formDepart.controls['preco'].touched) }">
+                            <small
+                        *ngIf="formDepart.controls['preco'].status == 'INVALID' && formDepart.controls['preco'].touched">
+                        Campo inválido</small>
+                        </div>
+                        <div class="infosProdutos">
+                            <label for="estoqueInput">
+                                Estoque do produto
+                            </label>
+                            <input id="estoqueInput" type="text" formControlName="estoque" [ngClass]="{ 'invalid': (formDepart.controls['estoque'].status == 'INVALID' 
+                    && formDepart.controls['estoque'].touched) }">
+                            <small
+                        *ngIf="formDepart.controls['estoque'].status == 'INVALID' && formDepart.controls['estoque'].touched">
+                        Campo inválido</small>
+                        </div>
+                        <div class="infosProdutos">
+                            <label for="departamentoInput">
+                                Departamento do produto
+                            </label>
+                            <input id="DepartamentoInput" type="text" formControlName="departamento" [ngClass]="{ 'invalid': (formDepart.controls['departamento'].status == 'INVALID' 
+                    && formDepart.controls['departamento'].touched) }">
+                            <small
+                        *ngIf="formDepart.controls['departamento'].status == 'INVALID' && formDepart.controls['departamento'].touched">
+                        Campo inválido</small>
+                        </div>
+                        <div class="infosProdutos">
+                            <label for="descricaoInput">
+                                Descrição do produto
+                            </label>
+                            <textarea id="descricaoInput" type="text" formControlName="descricao" [ngClass]="{ 'invalid': (formDepart.controls['descricao'].status == 'INVALID' 
+                    && formDepart.controls['descricao'].touched) }"></textarea>
+                            <small
+                        *ngIf="formDepart.controls['descricao'].status == 'INVALID' && formDepart.controls['descricao'].touched">
+                        Campo inválido</small>
+                        </div>
+                        <div class="infosProdutos">
+                            <label for="imagemInput">
+                                Imagem do produto
+                            </label>
+                            <input id="imagemInput" type="text" formControlName="imagem" [ngClass]="{ 'invalid': (formDepart.controls['imagem'].status == 'INVALID' 
+                    && formDepart.controls['imagem'].touched) }">
+                            <small
+                        *ngIf="formDepart.controls['imagem'].status == 'INVALID' && formDepart.controls['imagem'].touched">
+                        Campo inválido</small>
+                        </div>
+                    </form>
+                    <div class="btnEdit-Modal">
+                        <button (click)="editarProdutos()">
+                            Salvar edição
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+    <ng-container *ngIf="mostrarModalAddProd">
+        <div class="modal">
+            <div class="container-Modal">
+                <h1 id="close-Modal" (click)="closeModal()">
+                    X
+                </h1>
+                <div class="title-Modal">
+                    <h1>
+                        Adicionar
+                    </h1>
+                </div>
+                <div class="form-Modal">
+                    <form [formGroup]="formProd">
+                        <div class="infosProdutos">
+                            <label for="nomeInput">
+                                Nome do produto
+                            </label>
+                            <input id="nomeInput" type="text" formControlName="nome" [ngClass]="{ 'invalid': (formProd.controls['nome'].status == 'INVALID' 
+                    && formProd.controls['nome'].touched) }">
+                            <small
+                        *ngIf="formProd.controls['nome'].status == 'INVALID' && formProd.controls['nome'].touched">
+                        Campo inválido</small>
+                        </div>
+                        <div class="infosProdutos">
+                            <label for="precoInput">
+                                Preço do produto
+                            </label>
+                            <input id="precoInput" type="number" formControlName="preco" [ngClass]="{ 'invalid': (formProd.controls['preco'].status == 'INVALID' 
+                    && formProd.controls['preco'].touched) }">
+                            <small
+                        *ngIf="formProd.controls['preco'].status == 'INVALID' && formProd.controls['preco'].touched">
+                        Campo inválido</small>
+                        </div>
+                        <div class="infosProdutos">
+                            <label for="estoqueInput">
+                                Estoque do produto
+                            </label>
+                            <input id="estoqueInput" type="number" formControlName="estoque" [ngClass]="{ 'invalid': (formProd.controls['estoque'].status == 'INVALID' 
+                    && formProd.controls['estoque'].touched) }">
+                            <small
+                        *ngIf="formProd.controls['estoque'].status == 'INVALID' && formProd.controls['estoque'].touched">
+                        Campo inválido</small>
+                        </div>
+                        <div class="infosProdutos">
+                            <label for="departamentoInput">
+                                Departamento do produto
+                            </label>
+                            <input id="DepartamentoInput" type="text" formControlName="departamento" [ngClass]="{ 'invalid': (formProd.controls['departamento'].status == 'INVALID' 
+                    && formProd.controls['departamento'].touched) }">
+                            <small
+                        *ngIf="formProd.controls['departamento'].status == 'INVALID' && formProd.controls['departamento'].touched">
+                        Campo inválido</small>
+                        </div>
+                        <div class="infosProdutos">
+                            <label for="descricaoInput">
+                                Descrição do produto
+                            </label>
+                            <textarea id="descricaoInput" type="text" formControlName="descricao" [ngClass]="{ 'invalid': (formProd.controls['descricao'].status == 'INVALID' 
+                    && formProd.controls['descricao'].touched) }"></textarea>
+                            <small
+                        *ngIf="formProd.controls['descricao'].status == 'INVALID' && formProd.controls['descricao'].touched">
+                        Campo inválido</small>
+                        </div>
+                        <div class="infosProdutos">
+                            <label for="imagemInput">
+                                Imagem do produto
+                            </label>
+                            <input id="imagemInput" type="text" formControlName="imagem" [ngClass]="{ 'invalid': (formProd.controls['imagem'].status == 'INVALID' 
+                    && formProd.controls['imagem'].touched) }">
+                            <small
+                        *ngIf="formProd.controls['imagem'].status == 'INVALID' && formProd.controls['imagem'].touched">
+                        Campo inválido</small>
+                        </div>
+                    </form>
+                    <div class="btnAdd-Modal">
+                        <button (click)="addProdutos()">
+                            Adicionar Produto
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+</section>

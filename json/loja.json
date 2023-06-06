@@ -1,0 +1,44 @@
+{
+  "produtos": [
+    {
+      "nome": "Notebook Asus",
+      "preco": 3157.88,
+      "estoque": 60,
+      "departamento": 1,
+      "descricao": "Seja para trabalho ou lazer, o ASUS M515 é um notebook que oferece desempenho poderoso e visuais envolventes. Sua tela NanoEdge possui um revestimento antirreflexo fosco para uma experiência verdadeiramente envolvente. O M515 é equipado com até processador AMD Ryzen e memória de 8 GB. Armazenamento rápido com SSD com até 256GB PCIe SSD.",
+      "imagem": "https://images.kabum.com.br/produtos/fotos/334039/notebook-asus-amd-ryzen-5-3500u-8gb-ram-ssd-256gb-15-6-radeon-vega-8-windows-11-home-cinza-m515da-br1213w_1651244602_gg.jpg",
+      "id": 1
+    },
+    {
+      "nome": "Notebook Asus",
+      "preco": 3157.88,
+      "estoque": 60,
+      "departamento": 1,
+      "descricao": "Seja para trabalho ou lazer, o ASUS M515 é um notebook que oferece desempenho poderoso e visuais envolventes. Sua tela NanoEdge possui um revestimento antirreflexo fosco para uma experiência verdadeiramente envolvente. O M515 é equipado com até processador AMD Ryzen e memória de 8 GB. Armazenamento rápido com SSD com até 256GB PCIe SSD.",
+      "imagem": "https://images.kabum.com.br/produtos/fotos/334039/notebook-asus-amd-ryzen-5-3500u-8gb-ram-ssd-256gb-15-6-radeon-vega-8-windows-11-home-cinza-m515da-br1213w_1651244602_gg.jpg",
+      "id": 1
+    }
+  ],
+  "departamentos": [
+    {
+      "departamento": "Notebooks",
+      "id": 1
+    },
+    {
+      "departamento": "Periféricos",
+      "id": 2
+    },
+    {
+      "departamento": "Eletronicos",
+      "id": 3
+    },
+    {
+      "departamento": "Eletrodomesticos",
+      "id": 4
+    },
+    {
+      "departamento": "papelaria",
+      "id": 5
+    }
+  ]
+}

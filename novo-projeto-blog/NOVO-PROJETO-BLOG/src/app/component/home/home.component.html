@@ -1,0 +1,21 @@
+<section>
+    <ng-container *ngFor="let post of postHome">
+        <div class="containerCardsPost"  routerLink="/interna/posts/{{post.id}}">
+            <div class="cardHomePost">
+                <div class="textCardPost">
+                    <p>
+                        {{post.title}}
+                    </p>
+                </div>
+                <div class="infosCardHome">
+                    <h4>
+                        {{findAutor(post.userId)}}
+                    </h4>
+                    <h3>
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i> 5
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+</section>

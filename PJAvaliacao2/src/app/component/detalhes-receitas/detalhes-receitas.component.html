@@ -1,0 +1,97 @@
+<section> <!-- SECTION PRINCIPAL DA PAGINA -->
+    <!-- <ng-container *ngFor="let i of receitas">ngFor PARA PUXAR TODAS AS INFO DA RECEITA -->
+        <div class="textoReceita"> <!-- ngIf PARA QUE O ID DA RECEITA SEJA O MESMO DA URL -->
+            <div class="textInicio">
+                <div class="imgReceita">
+                    <img src="{{receitas.imagem}}" alt="">
+                </div>
+                <div class="text1">
+                    <h1>
+                        {{receitas.titulo}}
+                    </h1>
+                    <p>
+                        {{receitas.resumo}}
+                    </p>
+                    <div class="textLine">
+                        <div class="divRendi">
+                            <div>
+                                <p>Rendimento: </p>
+                            </div>
+                            <div *ngIf="receitas.rendimento == 1"> <!-- ngIf PARA CORRIGIR CONCORDANCIA -->
+                                <p><b>{{receitas.rendimento}} Porção</b> </p>
+                            </div>
+                            <div *ngIf="receitas.rendimento > 1"><!-- ngIf PARA CORRIGIR CONCORDANCIA -->
+                                <p><b>{{receitas.rendimento}} Porções </b></p>
+                            </div>
+                        </div>
+                        <div class="traco1"></div>
+                        <div class="divPreparo">
+                            <div>
+                                <p>Preparo:</p>
+                            </div>
+                            <div>
+                                <p><b>{{receitas.tempoPreparo}} MIN</b></p>
+                            </div>
+                        </div>
+                        <div class="traco2"></div>
+                        <div class="divDificuldade">
+                            <div>
+                                <p>Dificuldade:</p>
+                            </div>
+                            <div *ngIf="receitas.dificuldade == 1"> <!-- ngIf PARA MUDAR DIFICULDADE DE NUMBER PARA STRING  -->
+                                <p><b>Facil</b></p>
+                            </div>
+                            <div *ngIf="receitas.dificuldade == 2"><!-- ngIf PARA MUDAR DIFICULDADE DE NUMBER PARA STRING  -->
+                                <p><b>Médio</b></p>
+                            </div>
+                            <div *ngIf="receitas.dificuldade == 3"><!-- ngIf PARA MUDAR DIFICULDADE DE NUMBER PARA STRING  -->
+                                <p><b>Dificil</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="textMeio">
+                <div class="text2">
+                    <h2>
+                        Ingredientes
+                    </h2>
+                    <div class="gradeLista">
+                        <div class="listaReceita" *ngFor="let n of receitas.ingredientes"> <!-- ngFor PARA PUXAR TODOS OS INGREDIENTES DO ARRAY -->
+                            <p> {{n.quantidade}} - {{n.ingrediente}} </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text3">
+                    <h2>
+                        Modo de Preparo
+                    </h2>
+                    <div class="textPrincipal">
+                        <ng-container *ngFor="let f of receitas.modoPreparo"> <!-- ngFor ARA PUXAR TODO O MODO DE PREPARO DO ARRAY -->
+                            <p><span> {{f.passo}} </span>
+                                {{f.texto}}
+                            </p>
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- </ng-container> GALERIA DE CARDS ALEATORIOS -->
+    <div class="galeriaAleatoria">
+        <ng-container *ngFor="let i of receitasRand"> <!-- ngFor PARA PUXAR AS RECEITAS NA PAGINA -->
+            <div class="galeriaCards" routerLink="/detalhes-receitas/{{i.id}}/{{i.categoria}}"
+            (click)="MudarReceita(receitas.id)">
+                <div class="cardsHome">
+                    <div class="imgCard">
+                        <img src={{i.imagem}} alt="...">
+                    </div>
+                    <div class="textCard">
+                     <p>
+                        {{i.titulo}}
+                    </p>   
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</section>

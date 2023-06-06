@@ -1,0 +1,21 @@
+<section>
+    <div class="blogSideBar" routerLink="/home">
+        <img src="assets/blogger-logo-icon-png-3 1.png" alt="">
+    </div>
+    <div class="btnSideBar">
+        <button routerLink="/home" [ngClass]="{'ativo': (router.url == '/home') || (router.url.includes ('/interna/posts/'))}">
+            Posts
+        </button>
+        <button routerLink="/usuarios" [ngClass]="{'ativo': (router.url == '/usuarios') || (router.url.includes('/interna/usuarios/'))}">
+            Users
+        </button>
+    </div>
+    <div class="logoSideBar">
+        <img src="assets/itlean-logo-black 1.png" alt="">
+    </div>
+    <div class="redesSideBar">
+        <img src="assets/icon-twiter.png" alt="">
+        <img src="assets/icon-insta (1).png" alt="">
+        <img src="assets/icon-face.png" alt="">
+    </div>
+</section>

@@ -1,0 +1,25 @@
+<section>
+    <div class="cotainerCardUsers">
+    <ng-container *ngFor=" let info of users">
+            <div class="cardUser" routerLink="/interna/usuarios/{{info.id}}">
+                <ul>
+                    <li>
+                        Name: {{info.name}}
+                    </li>
+                    <li>
+                        Username: {{info.username}}
+                    </li>
+                    <li>
+                        E-mail:{{info.email}}
+                    </li>
+                    <li>
+                        Phone: {{info.phone}}
+                    </li>
+                    <li>
+                        Website: {{info.website}}
+                    </li>
+                </ul>
+            </div>
+        </ng-container>
+    </div>
+</section>

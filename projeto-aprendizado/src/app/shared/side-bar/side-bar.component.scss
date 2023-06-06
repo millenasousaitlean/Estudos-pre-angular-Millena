@@ -1,0 +1,74 @@
+.barraLateral{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    // border-right: 4px solid #fd760f;
+    padding: 80px 5px 10px 0px;
+    overflow: hidden;
+    transition: 0,8s;
+}
+
+.barraLateral:hover{
+    width: 250px;
+}
+
+.tituloSideBar{
+    width: 100%;
+    padding-left: 20px;
+
+}
+.tituloSideBar span{
+    color: rgb(47,46,65);
+    font-size: 30px;
+    cursor: pointer;
+    padding: 0px 10px 0px 30px;
+}
+.botoesMenu{
+    margin-top: 20px;
+}
+.botoesMenu ul{
+
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.botoesMenu ul li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: -10px;
+    transition: 1s;
+}
+.botoesMenu ul li:hover{
+    background-color: rgb(231, 102, 15);
+    
+}
+
+.botoesMenu ul li{
+    color: rgb(47,46,65);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 0px;
+    font-family: 'roboto';
+    display: flex;
+    margin-bottom: 10px;
+    line-height: 40px;
+    
+}
+.botoesMenu span i{
+    color: rgb(47,46,65);
+    font-size: 30px;
+    padding: 0px 15px;
+}
+
+.botoesMenu ul li .txt-icon{
+    margin-left: 30px;
+}
+
+
+.ativo{
+    background-color: rgb(231, 102, 15);
+}

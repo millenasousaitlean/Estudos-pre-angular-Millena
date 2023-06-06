@@ -1,0 +1,154 @@
+section {
+    width: 100%;
+
+    .containerInterna {
+        width: 100%;
+        margin-left: 250px;
+        display: flex;
+        flex-direction: column;
+
+
+        .textBannerInterna {
+            width: 100%;
+            border-bottom: 5px solid #007AEB;
+
+            .tituloBanner {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 42px;
+                // margin: 50px;
+                margin-top: 40px;
+                margin-left: 90px;
+
+
+                p {
+                    width: 830px;
+                    word-wrap: break-word;
+                }
+            }
+
+            .userBanner {
+                display: flex;
+                flex-direction: column;
+                margin: 50px 0px 35px 90px;
+
+                h3 {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 33px;
+                    color: #364A70;
+
+                }
+
+                h4 {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 33px;
+                    color: #364A70;
+                }
+
+            }
+
+
+        }
+
+        .textCorpoInterna {
+
+            .textPrincipal {
+                width: 750px;
+                word-wrap: break-word;
+                margin: 45px 0px 45px 140px;
+
+                p {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 33px;
+                    color: #000000;
+                }
+            }
+
+            .tituloComments {
+                margin-bottom: -40px;
+                margin-left: 70px;
+
+                h1 {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 27px;
+                    line-height: 38px;
+                    color: #000000;
+                }
+            }
+
+            .containerComments {
+                margin-left: 70px;
+                margin-bottom: 40px;                
+
+                .cardComments {
+                    display: flex;
+                    flex-direction: column;
+                    width: 900px;
+                    border: 2px solid #007AEB;
+                    border-radius: 12px;
+                    margin-top: 50px;
+
+                    .infosUserComments {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding: 20px;
+
+                        h4 {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 19px;
+                            line-height: 28px;
+                            color: #000000;
+
+                        }
+
+                        h3 {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 19px;
+                            line-height: 28px;
+                            text-decoration-line: underline;
+                            color: #000000;
+                        }
+                    }
+
+                    .corpoCarComments {
+                        width: 700px;
+                        padding: 25px 40px 40px 40px;
+
+                        p {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 28px;
+
+                            color: #000000;
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+
+    }
+
+}

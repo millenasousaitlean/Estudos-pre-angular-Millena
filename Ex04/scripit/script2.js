@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){ 
+bdocument.addEventListener("DOMContentLoaded", function(){ 
 
     tracoHome()
 

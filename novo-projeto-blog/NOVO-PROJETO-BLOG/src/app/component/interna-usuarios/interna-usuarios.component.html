@@ -1,0 +1,165 @@
+<section>
+    <div class="containerUserInterna">
+        <div class="infosUserWork">
+            <div class="ul1">
+                <ul>
+                    <li>
+                        Name Surname: {{userId.name}}
+                    </li>
+                    <li>
+                        Username: {{userId.username}}
+                    </li>
+                    <li>
+                        E-mail: {{userId.email}}
+                    </li>
+                    <li>
+                        Phone: {{userId.phone}}
+                    </li>
+                    <li>
+                        Website: {{userId.website}}
+                    </li>
+                </ul>
+            </div>
+            <div class="ul2">
+                <ul>
+                    <li>
+                        Company name: {{userId.company.name}}
+                    </li>
+                    <li>
+                        Company catch phrase: {{userId.company.catchPhrase}}
+                    </li>
+                    <li>
+                        Company bs: {{userId.company.bs}}
+                    </li>
+                </ul>
+            </div>
+            <div class="ul3">
+                <ul>
+                    <li>
+                        Street: {{userId.address.street}}
+                    </li>
+                    <li>
+                        Suite: {{userId.address.suite}}
+                    </li>
+                    <li>
+                        City: {{userId.address.city}}
+                    </li>
+                    <li>
+                        Zip code: {{userId.address.zipcode}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tituloContainerCards">
+            <h1>
+                Albums
+            </h1>
+        </div>
+        <div class="containerAlbuns">
+            <ng-container *ngFor="let n of albums">
+                <div class="cardsAlbuns" *ngIf="n.userId == idDaUrl" (click)="openModal()">
+                    <img [src]="puxaPhoto(n.id)" alt="...">
+                    <p>
+                        {{n.title}}
+                    </p>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+
+    <ng-container *ngIf="mostrarModal">
+        <div id="modal">
+            <div class="modal-conteiner">
+                <h2 (click)="closeModal()">
+                    X
+                </h2>
+                <h1>
+                    Photos
+                </h1>
+                <div class="bodyModal">
+
+                    <div class="Card">
+                        <div class="imgCard">
+                            <img src="https://i.pinimg.com/236x/9e/7c/82/9e7c82aa4318ae7a0784993765f4dd19.jpg" alt="">
+                        </div>
+                        <div class="textCard">
+                            <h3>
+                                sunt qui excepturi placeat culpa
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="Card">
+                        <div class="imgCard">
+                            <img src="https://i.pinimg.com/236x/9e/7c/82/9e7c82aa4318ae7a0784993765f4dd19.jpg" alt="">
+                        </div>
+                        <div class="textCard">
+                            <h3>
+                                sunt qui excepturi placeat culpa
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="Card">
+                        <div class="imgCard">
+                            <img src="https://i.pinimg.com/236x/9e/7c/82/9e7c82aa4318ae7a0784993765f4dd19.jpg" alt="">
+                        </div>
+                        <div class="textCard">
+                            <h3>
+                                sunt qui excepturi placeat culpa
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="Card">
+                        <div class="imgCard">
+                            <img src="https://i.pinimg.com/236x/9e/7c/82/9e7c82aa4318ae7a0784993765f4dd19.jpg" alt="">
+                        </div>
+                        <div class="textCard">
+                            <h3>
+                                sunt qui excepturi placeat culpa
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="Card">
+                        <div class="imgCard">
+                            <img src="https://i.pinimg.com/236x/9e/7c/82/9e7c82aa4318ae7a0784993765f4dd19.jpg" alt="">
+                        </div>
+                        <div class="textCard">
+                            <h3>
+                                sunt qui excepturi placeat culpa
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="Card">
+                        <div class="imgCard">
+                            <img src="https://i.pinimg.com/236x/9e/7c/82/9e7c82aa4318ae7a0784993765f4dd19.jpg" alt="">
+                        </div>
+                        <div class="textCard">
+                            <h3>
+                                sunt qui excepturi placeat culpa
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="Card">
+                        <div class="imgCard">
+                            <img src="https://i.pinimg.com/236x/9e/7c/82/9e7c82aa4318ae7a0784993765f4dd19.jpg" alt="">
+                        </div>
+                        <div class="textCard">
+                            <h3>
+                                sunt qui excepturi placeat culpa
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="Card">
+                        <div class="imgCard">
+                            <img src="https://i.pinimg.com/236x/9e/7c/82/9e7c82aa4318ae7a0784993765f4dd19.jpg" alt="">
+                        </div>
+                        <div class="textCard">
+                            <h3>
+                                sunt qui excepturi placeat culpa
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+</section>
